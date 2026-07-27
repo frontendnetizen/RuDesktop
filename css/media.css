@@ -817,6 +817,7 @@
     .item-form .jq-selectbox__select-text, .item-form input, .item-form textarea {
         height: 42px;
         font-size: 14px;
+        line-height: 130%;
     }
     .item-form textarea {
         height: 100px;
