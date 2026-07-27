@@ -715,7 +715,8 @@
         margin-bottom: 16px;
     }
     .item-tariff__top {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .item-tariff__content ul li {
         gap: 4px;
@@ -791,6 +792,7 @@
         padding: 24px;
     }
     .tabs-consultation {
+        padding-top: 0;
         display: block;
     }
     .tabs-consultation__btn {
