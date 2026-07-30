@@ -23,6 +23,54 @@ $(document).ready(function() {
     $(this).parent().siblings(".item-question").find(".item-question__content").slideUp(200);
   });
 
+  
+	  $(".unit-compare__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+  });
+
+  	  $(".unit-dropdown__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+  });
+
+  //filters
+  $('.filter-page__btn').on('click', function () {
+        const $btn = $(this);
+        const filterValue = $btn.data('filter');
+        const $sections = $('.section-solutions');
+        
+
+        if ($btn.hasClass('active')) return;
+
+        $('.filter-page__btn').removeClass('active');
+        $btn.addClass('active');
+
+        if (filterValue === 'all') {
+            $sections.stop(true, true).fadeIn(300);
+        } else {
+            $sections.stop(true, true).hide();
+            $sections.filter(`[data-tab="${filterValue}"]`).stop(true, true).fadeIn(300);
+        }
+
+        var textTab = $(this).html();
+      $(this).parent().siblings(".btn-filter").html(textTab);
+      $('.btn-filter').removeClass("active");
+
+    });
+
+      	$('.filter-page-wrapper').each(function () {
+		var currentTab = $(this);
+		var initalTextTab = currentTab.find(".filter-page__btn.active").html();
+		currentTab.find(".btn-filter").html(initalTextTab);
+	});
+	$('.btn-filter').click(function () {
+		$(this).toggleClass("active");
+		$(this).siblings(".filter-page").slideToggle(200);
+		$('.filter-page-wrapper .filter-page .filter-page__btn').click(function (event) {
+			$(this).parent().slideUp(200);
+		});
+	});
 
   //video
 $('.video-main').on('click', function () {
@@ -116,6 +164,12 @@ $('video').on('ended', function () {
 		}
   });
 
+  	  $('.menu__haschild > a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().toggleClass('active');
+	 $(this).siblings(".menu__dropdown").slideToggle(200);
+  });
+//tabs
   	$('.tabs-wrapper').each(function () {
 		var currentTab = $(this);
 		var initalTextTab = currentTab.find(".active a").html();
@@ -136,17 +190,43 @@ $('video').on('ended', function () {
 		$('.btn-tab').removeClass("active");
 	});
 
-	  $('.menu__haschild > a').click(function(event) {
-    event.preventDefault();
-    $(this).parent().toggleClass('active');
-	 $(this).siblings(".menu__dropdown").slideToggle(200);
-  });
 
     $('.tabs li a').click(function(event) {
     event.preventDefault();
     $(this).parent().parent().find("li").removeClass('active');
     $(this).parent().addClass('active');
     $(this).parents("section").find(".tab-pane").fadeOut(0);
+    var selectTab = $(this).attr("href");
+    $(selectTab).fadeIn(200);
+  });
+
+  //tabs inner
+  	$('.tabs-wrapper-inners').each(function () {
+		var currentTab = $(this);
+		var initalTextTab = currentTab.find(".active a").html();
+		currentTab.find(".btn-tab-inner").html(initalTextTab);
+	});
+	$('.btn-tab-inner').click(function () {
+		$(this).toggleClass("active");
+		$(this).siblings(".tabs-inner").slideToggle(200);
+		$('.tabs-wrapper-inners .tabs-inner li a').click(function (event) {
+			$(this).parent().parent().slideUp(200);
+		});
+	});
+
+		$('.tabs-wrapper-inners .tabs-inner li a').click(function (e) {
+			e.preventDefault();
+		var textTab = $(this).html();
+		$(this).parent().parent().siblings(".btn-tab-inner").html(textTab);
+		$('.btn-tab-inner').removeClass("active");
+	});
+
+
+    $('.tabs-inner li a').click(function(event) {
+    event.preventDefault();
+    $(this).parent().parent().find("li").removeClass('active');
+    $(this).parent().addClass('active');
+    $(this).parents(".tab-pane").find(".tab-pane-inner").fadeOut(0);
     var selectTab = $(this).attr("href");
     $(selectTab).fadeIn(200);
   });
@@ -194,9 +274,56 @@ $('video').on('ended', function () {
 
 
 //tabs tariffs
-	  $(".item-tariff__term").click(function() {
-    $(this).addClass("active");
-    $(this).siblings().removeClass("active");
+  function updateKpLink($card) {
+    var activeKp = $card.find('.item-tariff__term.active').data('kp');
+    
+    if (activeKp) {
+      $card.find('.btn-get-kp').attr('href', '#get-kp-' + activeKp);
+    }
+  }
+
+  $('.item-tariff').each(function() {
+    updateKpLink($(this));
+  });
+
+  $('.item-tariff__term').click(function() {
+    var $this = $(this);
+    
+    $this.addClass('active').siblings().removeClass('active');
+    
+    var $parentCard = $this.closest('.item-tariff');
+    updateKpLink($parentCard);
+  });
+
+  //inputs
+  // Функция проверки и переключения класса
+  function toggleFilledClass($input) {
+    const $parent = $input.closest('.control-form');
+    
+    if ($input.val().trim() !== '') {
+      $parent.addClass('filled');
+    } else {
+      $parent.removeClass('filled');
+    }
+  }
+
+  // 1. Отслеживаем ввод текста (включая вставку и автозаполнение)
+  $('.control-form input').on('input change', function () {
+    toggleFilledClass($(this));
+  });
+
+  // 2. Обработка клика по кнопке очистки
+  $('.control-form').on('click', '.control-form__clear', function () {
+    const $container = $(this).closest('.control-form');
+    const $input = $container.find('input');
+
+    // Очищаем значение, убираем класс и возвращаем фокус в инпут
+    $input.val('').trigger('input').focus();
+  });
+
+  // 3. Проверяем поля при загрузке (если браузер уже что-то вставил)
+  $('.control-form input').each(function () {
+    toggleFilledClass($(this));
   });
 
 
@@ -232,7 +359,7 @@ function initConsultationTabs() {
     initConsultationTabs();
 
 	//form validation
-	$('.consultation').on('submit', 'form', function(e) {
+	$('.consultation, .modal-wrap').on('submit', 'form', function(e) {
         e.preventDefault();
 
         const $form = $(this);
@@ -244,11 +371,16 @@ function initConsultationTabs() {
                 return acc;
             }, {});
 
-             $.fancybox.open({
+			 $.fancybox.close();
+
+			setTimeout(() => {
+		$.fancybox.open({
 				src  : '#modal-thanks',
 				type: 'inline',
 				touch: false
 			});
+	}, 150);
+             
 
 
         } else {
@@ -288,7 +420,72 @@ function initConsultationTabs() {
 		});
 	});
 
-	$(".input-phone").mask("+7 (999) 999-99-99");
+	$(".input-phone").intlTelInput({
+		initialCountry:"ru",
+		utilsScript: "libs/intl-tel-input-master/build/js/utils.js",
+
+	});
+
+
+  //scroll checkout
+const $scrollBlock = $('.scroll-checkout');
+  const $sidebar = $('.sidebar-checkout');
+  const scrollOffset = 100; // Через сколько px от верха включать .fixed
+
+  function checkScroll() {
+    // 1. Проверяем, существует ли сайдбар на странице
+    if (!$sidebar.length) return;
+
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const sidebarTop = $sidebar.offset().top; 
+
+    const reachedSidebar = (scrollTop + windowHeight) >= sidebarTop;
+
+    // 2. Условие: проскроллили ниже 100px И ЕЩЕ НЕ дошли до сайдбара
+    if (scrollTop > scrollOffset && !reachedSidebar) {
+      $scrollBlock.addClass('fixed');
+    } else {
+      $scrollBlock.removeClass('fixed');
+    }
+  }
+
+  $(window).on('scroll resize', checkScroll);
+  
+  checkScroll();
+
+  
+	$('.scroll-checkout').on('click', function(e) {
+  e.preventDefault();
+  
+  var headerHeight = $('.header').outerHeight();
+
+
+  $('html, body').animate({
+      scrollTop: $(".sidebar-checkout").offset().top - headerHeight
+  }, 800); 
+});
+
+//js change ckeckout
+
+	$('.js-change-checkout').on('click', function(e) {
+  e.preventDefault();
+ $(".change-checkout").slideToggle(200);
+});
+
+// js open requisites
+	$('.js-open-requisites').on('click', function(e) {
+  e.preventDefault();
+ $(".requisites-checkout").slideToggle(200);
+ $(".requisites-checkout").prev(".text-small.text-small--gray").slideToggle(200);
+});
+
+
+// js open requisites
+	$('.js-open-check-login').on('click', function(e) {
+  e.preventDefault();
+ $(".check-user__form").slideToggle(200);
+});
 
 
 	 // стайлер для select
@@ -308,6 +505,50 @@ function initConsultationTabs() {
             $currentStep.nextAll('.select-step').find('select').trigger('refresh');
         }
     });
+
+	//scrolls
+	$('.js-scroll-consult').on('click', function(e) {
+  e.preventDefault();
+  
+  var headerHeight = $('.header').outerHeight();
+
+     $(".tabs-consultation__btn").removeClass("active");
+  $(".tabs-consultation__btn:nth-child(1)").addClass("active");
+
+     $(".tab-pane-consultation").removeClass("active").fadeOut();
+  $(".tab-pane-consultation:nth-child(1)").addClass("active").fadeIn();
+  
+  $('html, body').animate({
+      scrollTop: $(".consultation__main").offset().top - headerHeight
+  }, 800); 
+});
+
+	$('.js-scroll-demo').on('click', function(e) {
+  e.preventDefault();
+  
+  var headerHeight = $('.header').outerHeight();
+
+   $(".tabs-consultation__btn").removeClass("active");
+  $(".tabs-consultation__btn:nth-child(2)").addClass("active");
+
+     $(".tab-pane-consultation").removeClass("active").fadeOut();
+  $(".tab-pane-consultation:nth-child(2)").addClass("active").fadeIn();
+
+  $('html, body').animate({
+      scrollTop: $(".consultation__main").offset().top - headerHeight
+  }, 800); 
+});
+
+$('.tariffs-links a').on('click', function(e) {
+  e.preventDefault();
+  
+  var targetId = $(this).attr('href');
+  var headerHeight = $('.header').outerHeight();
+  
+  $('html, body').animate({
+      scrollTop: $(targetId).offset().top - headerHeight
+  }, 800); 
+});
 
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox({
