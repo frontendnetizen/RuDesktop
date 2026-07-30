@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>RuDesktop</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/intl-tel-input-master/build/css/intlTelInput.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.2" />
+	<link rel="stylesheet" href="css/media.css?ver=1.2" />
+</head>
+<body>
+
+	<div class="preloader">
+		<div class="preloader__glass">
+			<div class="half"></div>
+			<div class="half"></div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__wrapper">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li><a href="#">Для бизнеса</a></li>
+								<li><a href="#">Для госорганизаций</a></li>
+								<li><a href="#">Для дома</a></li>
+							</ul>
+						</nav>
+						<div class="header__right">
+							<div class="phones-list">
+								<div class="phones-list__value">
+									<a href="tel:88005006857">8 800 500-68-57</a>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								</div>
+								<div class="phones-list__dropdown">
+									<div class="phones-list__item">
+										<div class="phones-list__value">
+											<a href="tel:88005006857">8 800 500-68-57</a>
+											<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 10L8 6L4 10" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg>
+										</div>
+										<div class="text-small">Бесплатно по России</div>
+									</div>
+									<div class="phones-list__item">
+										<div class="phones-list__value">
+											<a href="tel:84994600057">8 499 460-00-57</a>
+										</div>
+										<div class="text-small">Телефон в Москве</div>
+									</div>
+									<div class="phones-list__item">
+										<div class="phones-list__value">
+											<a href="mailto:sales@rudesktop.ru">sales@rudesktop.ru</a>
+										</div>
+										<div class="text-small">Отдел продаж</div>
+									</div>
+									<div class="phones-list__item">
+										<div class="phones-list__value">
+											<a href="mailto:support@rudesktop.ru">support@rudesktop.ru</a>
+										</div>
+										<div class="text-small">Техническая поддержка</div>
+									</div>
+									<ul class="socials-list socials-list--main">
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/rt.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/hb.svg" alt="alt"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="open-search">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M13.9999 13.9999L11.0999 11.0999" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								Поиск
+							</div>
+							<a href="#" class="link-login">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3334 14V12.6667C13.3334 11.9594 13.0525 11.2811 12.5524 10.781C12.0523 10.281 11.374 10 10.6667 10H5.33341C4.62617 10 3.94789 10.281 3.4478 10.781C2.9477 11.2811 2.66675 11.9594 2.66675 12.6667V14" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M7.99992 7.33333C9.47268 7.33333 10.6666 6.13943 10.6666 4.66667C10.6666 3.19391 9.47268 2 7.99992 2C6.52716 2 5.33325 3.19391 5.33325 4.66667C5.33325 6.13943 6.52716 7.33333 7.99992 7.33333Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								Войти
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__wrapper">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="RuDesktop">
+						</a>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__haschild">
+									<a href="#">Продукт</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">RuDesktop <span class="text-small">Удаленный доступ</span></a></li>
+											<li><a href="#">RuDesktop UEM <span class="text-small">Удаленное управление ИТ-парком</span></a></li>
+											<li><a href="#">Все возможности</a></li>
+											<li><a href="#">Безопасность</a></li>
+											<li><a href="#">Совместимость и интеграции</a></li>
+											<li><a href="#">Лицензии и сертификаты</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Решения</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown menu__dropdown--main">
+										<div class="menu__dropdown-wrap">
+											<ul class="menu__dropdown-nav">
+												<li><a href="#">По пользователям</a></li>
+												<li><a href="#">По задачам</a></li>
+												<li><a href="#">По отраслям</a></li>
+												<li><a href="#">По операционным системам</a></li>
+											</ul>
+											<div class="menu__dropdown-tabs">
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">ИТ-отделы</a></li>
+														<li><a href="#">Малый и средний бизнес</a></li>
+														<li><a href="#">Крупные предприятия</a></li>
+														<li><a href="#">Госкорпорации</a></li>
+														<li><a href="#">Фрилансеры</a></li>
+														<li><a href="#">Физические лица</a></li>
+													</ul>
+												</div>
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">Удаленный доступ и поддержка</a></li>
+														<li><a href="#">Удаленное управление</a></li>
+														<li><a href="#">Удаленный рабочий стол</a></li>
+														<li><a href="#">Совместное использование экрана</a></li>
+														<li><a href="#">Инвентаризация ПО и оборудования</a></li>
+													</ul>
+												</div>
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">Информационные технологии</a></li>
+														<li><a href="#">Финансы</a></li>
+														<li><a href="#">Энергетика</a></li>
+														<li><a href="#">Промышленность</a></li>
+														<li><a href="#">Транспорт и логистика</a></li>
+														<li><a href="#">Торговля</a></li>
+													</ul>
+													<div class="menu__dropdown-link">
+														<a href="#" class="link">Все клиенты и кейсы <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+													</div>
+												</div>
+												<div class="menu__dropdown-tab">
+													<div class="menu__dropdown-grid">
+														<div class="menu__dropdown-column">
+															<div class="menu__dropdown-subtitle">Международные</div>
+															<ul>
+																<li><a href="#">Windows</a></li>
+																<li><a href="#">Linux <span class="text-small">Ubuntu, Debian и Arch Linux</span></a></li>
+																<li><a href="#">macOS</a></li>
+																<li><a href="#">Android</a></li>
+																<li><a href="#">Портабельная версия <span class="text-small">Для Windows</span></a></li>
+															</ul>
+														</div>
+														<div class="menu__dropdown-column">
+															<div class="menu__dropdown-subtitle">Отечественные</div>
+															<ul>
+																<li><a href="#">Astra Linux</a></li>
+																<li><a href="#">Alt Linux</a></li>
+																<li><a href="#">РЕД ОС</a></li>
+																<li><a href="#">РОСА</a></li>
+																<li><a href="#">ОСнова</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="menu__dropdown-link">
+														<a href="#" class="link">Все совместимости и интеграции <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#">Клиенты</a></li>
+								<li><a href="#">Тарифы</a></li>
+								<li class="menu__haschild">
+									<a href="#">Поддержка</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">Документация <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M10 2H14V6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M6.66602 9.33333L13.9993 2" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></a></li>
+											<li><a href="#">Создать обращения</a></li>
+											<li><a href="#">Регламент техподдержки</a></li>
+											<li><a href="#">Частые вопросы</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Партнерам</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">Партнерская программа</a></li>
+											<li><a href="#">Партнеры и дистрибьюторы</a></li>
+											<li><a href="#">Регистрация сделки</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Компания</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Новости</a></li>
+											<li><a href="#">Мероприятия</a></li>
+											<li><a href="#">Блог</a></li>
+											<li><a href="#">Медиа-кит</a></li>
+											<li><a href="#">Вакансии</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__buttons">
+							<a href="#" class="btn btn--secondary">Скачать</a>
+							<a href="#" class="btn">Купить</a>
+							<a href="#" class="link-login show-mobile">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3334 14V12.6667C13.3334 11.9594 13.0525 11.2811 12.5524 10.781C12.0523 10.281 11.374 10 10.6667 10H5.33341C4.62617 10 3.94789 10.281 3.4478 10.781C2.9477 11.2811 2.66675 11.9594 2.66675 12.6667V14" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M7.99992 7.33333C9.47268 7.33333 10.6666 6.13943 10.6666 4.66667C10.6666 3.19391 9.47268 2 7.99992 2C6.52716 2 5.33325 3.19391 5.33325 4.66667C5.33325 6.13943 6.52716 7.33333 7.99992 7.33333Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								Войти
+							</a>
+							<div class="sandwich">
+								<div class="sw-topper"></div>
+								<div class="sw-bottom"></div>
+								<div class="sw-footer"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<div class="container">
+					<div class="search-form">
+						<form>
+							<input type="text" placeholder="Поиск" required>
+							<button class="btn">Найти</button>
+						</form>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__haschild">
+										<a href="#">Продукт <span class="menu__arrow"></span></a>
+										<div class="menu__dropdown">
+											<ul>
+												<li><a href="#">RuDesktop <span class="text-small">Удаленный доступ</span></a></li>
+												<li><a href="#">RuDesktop UEM <span class="text-small">Удаленное управление ИТ-парком</span></a></li>
+												<li><a href="#">Все возможности</a></li>
+												<li><a href="#">Безопасность</a></li>
+												<li><a href="#">Совместимость и интеграции</a></li>
+												<li><a href="#">Лицензии и сертификаты</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__haschild">
+										<a href="#">Решения <span class="menu__arrow"></span></a>
+										<div class="menu__dropdown">
+											<ul class="menu__list">
+												<li class="menu__haschild">
+													<a href="#">По пользователям <span class="menu__arrow"></span></a>
+													<div class="menu__dropdown">
+														<ul>
+															<li><a href="#">ИТ-отделы</a></li>
+															<li><a href="#">Малый и средний бизнес</a></li>
+															<li><a href="#">Крупные предприятия</a></li>
+															<li><a href="#">Госкорпорации</a></li>
+															<li><a href="#">Фрилансеры</a></li>
+															<li><a href="#">Физические лица</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="menu__haschild">
+													<a href="#">По задачам <span class="menu__arrow"></span></a>
+													<div class="menu__dropdown">
+														<ul>
+															<li><a href="#">Удаленный доступ и поддержка</a></li>
+															<li><a href="#">Удаленное управление</a></li>
+															<li><a href="#">Удаленный рабочий стол</a></li>
+															<li><a href="#">Совместное использование экрана</a></li>
+															<li><a href="#">Инвентаризация ПО и оборудования</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="menu__haschild">
+													<a href="#">По отраслям <span class="menu__arrow"></span></a>
+													<div class="menu__dropdown">
+														<ul>
+															<li><a href="#">Информационные технологии</a></li>
+															<li><a href="#">Финансы</a></li>
+															<li><a href="#">Энергетика</a></li>
+															<li><a href="#">Промышленность</a></li>
+															<li><a href="#">Транспорт и логистика</a></li>
+															<li><a href="#">Торговля</a></li>
+														</ul>
+														<div class="menu__dropdown-link">
+															<a href="#" class="link">Все клиенты и кейсы <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+														</div>
+													</div>
+												</li>
+												<li class="menu__haschild">
+													<a href="#">По операционным системам <span class="menu__arrow"></span></a>
+													<div class="menu__dropdown">
+														<div class="menu__dropdown-subtitle">Международные</div>
+														<ul>
+															<li><a href="#">Windows</a></li>
+															<li><a href="#">Linux <span class="text-small">Ubuntu, Debian и Arch Linux</span></a></li>
+															<li><a href="#">macOS</a></li>
+															<li><a href="#">Android</a></li>
+															<li><a href="#">Портабельная версия <span class="text-small">Для Windows</span></a></li>
+														</ul>
+														<div class="menu__dropdown-subtitle">Отечественные</div>
+														<ul>
+															<li><a href="#">Astra Linux</a></li>
+															<li><a href="#">Alt Linux</a></li>
+															<li><a href="#">РЕД ОС</a></li>
+															<li><a href="#">РОСА</a></li>
+															<li><a href="#">ОСнова</a></li>
+														</ul>
+														<div class="menu__dropdown-link">
+															<a href="#" class="link">Все совместимости и интеграции <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">Клиенты</a></li>
+									<li><a href="#">Тарифы</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-6">
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__haschild">
+										<a href="#">Поддержка <span class="menu__arrow"></span></a>
+										<div class="menu__dropdown">
+											<ul>
+												<li><a href="#">Документация <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M10 2H14V6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M6.66602 9.33333L13.9993 2" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></a></li>
+												<li><a href="#">Создать обращения</a></li>
+												<li><a href="#">Регламент техподдержки</a></li>
+												<li><a href="#">Частые вопросы</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__haschild">
+										<a href="#">Партнерам <span class="menu__arrow"></span></a>
+										<div class="menu__dropdown">
+											<ul>
+												<li><a href="#">Партнерская программа</a></li>
+												<li><a href="#">Партнеры и дистрибьюторы</a></li>
+												<li><a href="#">Регистрация сделки</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="menu__haschild">
+										<a href="#">Компания <span class="menu__arrow"></span></a>
+										<div class="menu__dropdown">
+											<ul>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Мероприятия</a></li>
+												<li><a href="#">Блог</a></li>
+												<li><a href="#">Медиа-кит</a></li>
+												<li><a href="#">Вакансии</a></li>
+												<li><a href="#">Контакты</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span class="text-small">Для бизнеса</span></a></li>
+									<li><a href="#"><span class="text-small">Для госорганизаций</span></a></li>
+									<li><a href="#"><span class="text-small">Для дома</span></a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="menu-mobile__buttons show-mobile">
+						<a href="#" class="btn btn--secondary">Скачать</a>
+						<a href="#" class="btn">Купить</a>
+					</div>
+					<div class="menu-mobile__contacts">
+						<div class="menu-mobile__contact">
+							<div class="menu-mobile__value">
+								<a href="tel:88005006857">8 800 500-68-57</a>
+							</div>
+							<div class="text-small">Бесплатно по России</div>
+						</div>
+						<div class="menu-mobile__contact">
+							<div class="menu-mobile__value">
+								<a href="tel:84994600057">8 499 460-00-57</a>
+							</div>
+							<div class="text-small">Телефон в Москве</div>
+						</div>
+						<div class="menu-mobile__contact">
+							<div class="menu-mobile__value">
+								<a href="mailto:sales@rudesktop.ru">sales@rudesktop.ru</a>
+							</div>
+							<div class="text-small">Отдел продаж</div>
+						</div>
+						<div class="menu-mobile__contact">
+							<div class="menu-mobile__value">
+								<a href="mailto:support@rudesktop.ru">support@rudesktop.ru</a>
+							</div>
+							<div class="text-small">Техническая поддержка</div>
+						</div>
+					</div>
+					<ul class="socials-list socials-list--main">
+						<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/rt.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+						<li><a href="#" target="_blank"><img src="img/hb.svg" alt="alt"></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero-page hero-page--remote">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li>RuDesktop: Удаленный доступ</li>
+				</ul>
+				<div class="hero-page__main">
+					<h1 class="title">RuDesktop <br>— российское ПО <br>для удаленного доступа</h1>
+					<p class="description">Отечественное решение для быстрого, удобного и безопасного подключения к устройствам</p>
+					<ul>
+						<li>Работа в облаке или на собственном сервере</li>
+						<li>Поддержка всех популярных и отечественных ОС</li>
+						<li>Бесплатная версия и коммерческие лицензии</li>
+					</ul>
+					<div class="hero-page__buttons">
+						<a href="#" class="btn">Купить</a>
+						<a href="#" class="btn btn--accent">Попробовать бесплатно</a>
+					</div>
+					<div class="hero-page__picture">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/hero_remote.jpg">
+							<source media="(min-width: 767px)" srcset="img/hero_remote_tablet.jpg">
+							<img src="img/hero_remote_mob.jpg" alt="alt">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="solutions">
+			<div class="container">
+				<div class="head-section head-section--center">
+					<p class="subtitle">[ продукты ]</p>
+					<h2 class="title">Удаленный доступ через облако или собственный сервер</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-3 col-md-6 solutions__info">
+						<div class="solutions__text">
+							<p>RuDesktop — это клиент-серверное приложение, предназначенное для обеспечения доступа к рабочему столу удаленных компьютеров.</p>
+							<p>Клиент устанавливается на устройства с операционными системами Windows, Linux, macOS, Android, Astra Linux, РЕД ОС и др.</p>
+							<p>Доступны два варианта работы: через облачную инфраструктуру RuDesktop или через ваш собственный сервер.</p>
+						</div>
+						<a href="#" class="btn btn--accent">Сравнение всех версий</a>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="item-solution item-solution--small">
+							<div class="item-solution__head">
+								<div class="item-solution__icon">
+									<img src="img/icon_product1.svg" alt="Удаленный доступ">
+								</div>
+								<div class="item-solution__info">
+									<div class="item-solution__subtitle">RuDesktop</div>
+									<div class="item-solution__title">Удаленный доступ</div>
+								</div>
+								<div class="item-solution__tags">
+									<div class="item-solution__tag">Облако</div>
+								</div>
+							</div>
+							<div class="item-solution__center">
+								<p>Подключение через облачный сервер RuDesktop без развертывания собственной инфраструктуры</p>
+							</div>
+							<div class="badge-main">Для дома и бизнеса</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="item-solution item-solution--small">
+							<div class="item-solution__head">
+								<div class="item-solution__icon">
+									<img src="img/icon_product3.svg" alt="Удаленный доступ">
+								</div>
+								<div class="item-solution__info">
+									<div class="item-solution__subtitle">RuDesktop</div>
+									<div class="item-solution__title">Удаленный доступ</div>
+								</div>
+								<div class="item-solution__tags">
+									<div class="item-solution__tag">Сервер</div>
+								</div>
+							</div>
+							<div class="item-solution__center">
+								<p>Подключение через облачный сервер RuDesktop без развертывания собственной инфраструктуры</p>
+							</div>
+							<div class="badge-main">Для бизнеса и госкорпораций</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-md-6">
+						<div class="item-solution item-solution--small item-solution--light">
+							<a href="#" class="external-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="#D32D2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M15 3H21V9" stroke="#D32D2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M10 14L21 3" stroke="#D32D2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							<div class="item-solution__head">
+								<div class="item-solution__icon">
+									<img src="img/icon_product4.svg" alt="Удаленный доступ и управление устройствами">
+								</div>
+								<div class="item-solution__info">
+									<div class="item-solution__subtitle">RuDesktop UEM</div>
+									<div class="item-solution__title">Удаленный доступ и управление устройствами</div>
+								</div>
+								<div class="item-solution__tags">
+									<div class="item-solution__tag">Сервер</div>
+								</div>
+							</div>
+							<div class="item-solution__center">
+								<p>Централизованное управление парком устройств как дополнение к удаленному доступу</p>
+							</div>
+							<div class="badge-main">Для бизнеса и госкорпораций</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tools">
+			<div class="container">
+				<div class="head-section head-section--center">
+					<p class="subtitle">[ инструменты ]</p>
+					<h2 class="title">Полный набор инструментов <br>для работы</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4">
+						<div class="item-tools">
+							<div class="title-small">
+								<img src="img/ic_tools1.svg" alt="Доступ и контроль">
+								Доступ и контроль
+							</div>
+							<ul>
+								<li>Удаленное управление рабочим столом</li>
+								<li>Передача файлов</li>
+								<li>Адресная книга</li>
+								<li>Временный и постоянный пароль</li>
+								<li>История подключений</li>
+								<li>Удаленное включение и перезагрузка устройств</li>
+								<li>Проброс USB-устройств</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-tools">
+							<div class="title-small">
+								<img src="img/ic_tools2.svg" alt="Совместная работа">
+								Совместная работа
+							</div>
+							<ul>
+								<li>Текстовый чат</li>
+								<li>Совместная работа в одной сессии</li>
+								<li>Быстрый доступ к сохраненным устройствам</li>
+								<li>Общий буфер обмена</li>
+								<li>Передача файлов в реальном времени</li>
+								<li>Уведомления о входящих подключениях</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-tools">
+							<div class="title-small">
+								<img src="img/ic_tools3.svg" alt="Администрирование">
+								Администрирование
+							</div>
+							<ul>
+								<li>Неограниченное число управляемых устройств</li>
+								<li>Логирование всех сессий</li>
+								<li>Управление правами пользователей</li>
+								<li>Интеграция с AD / LDAP</li>
+								<li>Автоматическое обновление клиента</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn btn--accent btn--full">Узнать о всех возможностях</a>
+			</div>
+		</section>
+
+		<section class="video">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ видео ]</p>
+					<h2 class="title">Видео-демо: как работает управление устройствами</h2>
+					<p class="description">3 мин · Обзор основных возможностей RuDesktop</p>
+				</div>
+				<div class="video-main">
+					<video width="100%" data-keepplaying height="auto" preload="auto">
+						<source src="img/video1.mp4" type="video/mp4"></source> 
+					</video>
+					<div class="video-main__play"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="target-tasks">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ для кого ]</p>
+					<h2 class="title">Подходит для любых задач</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4">
+						<div class="item-target">
+							<div class="item-target__head">
+								<img src="img/ic_target1.svg" alt="Для бизнеса">
+								<div class="title-small">Для бизнеса</div>
+							</div>
+							<div class="item-target__content">
+								<ul>
+									<li>Организация удаленной работы сотрудников</li>
+									<li>Централизованная техническая поддержка</li>
+									<li>Работа в распределенной инфраструктуре</li>
+									<li>Замена зарубежных решений удаленного доступа</li>
+								</ul>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-target">
+							<div class="item-target__head">
+								<img src="img/ic_target2.svg" alt="Для госкорпораций">
+								<div class="title-small">Для госкорпораций</div>
+							</div>
+							<div class="item-target__content">
+								<ul>
+									<li>Работа в закрытом периметре</li>
+									<li>Хранение данных на собственном сервере</li>
+									<li>Контроль действий пользователей</li>
+								</ul>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-target">
+							<div class="item-target__head">
+								<img src="img/ic_target3.svg" alt="Для дома">
+								<div class="title-small">Для дома</div>
+							</div>
+							<div class="item-target__content">
+								<ul>
+									<li>Подключение к домашнему или рабочему компьютеру</li>
+									<li>Помощь родственникам и коллегам</li>
+									<li>Бесплатная версия с ограничением подключений на 2 часа в сутки</li>
+								</ul>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reliability">
+			<div class="container">
+				<div class="reliability__main">
+					<div class="head-section">
+						<p class="subtitle">[ безопасность и надежность ]</p>
+						<h2 class="title">Безопасное соединение <br>на каждом уровне</h2>
+						<p class="description">Передача данных осуществляется по HTTPS (443 порт) с использованием TLS-шифрования. Все подключения логируются и могут быть проверены.</p>
+						<ul>
+							<li>TLS-шифрование</li>
+							<li>Полная история сессий и событий</li>
+							<li>Управление правами</li>
+							<li>Интеграция с SIEM</li>
+						</ul>
+						<a href="#" class="btn">Узнать больше</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="architecture">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ архитектура ]</p>
+					<h2 class="title">Простая установка и работа</h2>
+					<p class="description">Клиент RuDesktop устанавливается на обоих устройствах. Сервер, облачный или собственный, обеспечивает маршрутизацию и защищенное соединение</p>
+				</div>
+				<div class="tabs-main">
+					<ul class="tabs">
+						<li class="active"><a href="#tab_architecture1">Облако</a></li>
+						<li><a href="#tab_architecture2">Сервер</a></li>
+					</ul>
+				</div>
+				<div class="tab-container">
+					<div class="tab-pane" id="tab_architecture1">
+						<div class="architecture__image">
+							<img src="img/architecture1.jpg" alt="Облако">
+						</div>
+					</div>
+					<div class="tab-pane" id="tab_architecture2">
+						<div class="architecture__image">
+							<img src="img/architecture2.jpg" alt="Сервер">
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn btn--full">Тестировать для бизнеса</a>
+			</div>
+		</section>
+
+		<section class="cases">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ кейсы ]</p>
+					<h2 class="title">Реализованные проекты</h2>
+				</div>
+				<div class="grid-main">
+					<div class="item-case">
+						<a href="#" class="item-case__image">
+							<img src="img/case_logo1.svg" alt="itsmf">
+						</a>
+						<div class="item-case__content">
+							<div class="text-small hidden-mobile">12 февраля 2026</div>
+							<a class="tag show-mobile">Информационные технологии</a>
+							<a href="#" class="title-small">IT-COMPANY: RuDesktop как основной инструмент аутсорсинговой ИТ-поддержки 200+ клиентов</a>
+							<div class="item-case__bottom">
+								<a class="tag hidden-mobile">Информационные технологии</a>
+								<div class="text-small show-mobile">12 февраля 2026</div>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+					<div class="item-case">
+						<a href="#" class="item-case__image">
+							<img src="img/case_logo1.svg" alt="itsmf">
+						</a>
+						<div class="item-case__content">
+							<div class="text-small hidden-mobile">12 февраля 2026</div>
+							<a class="tag show-mobile">Информационные технологии</a>
+							<a href="#" class="title-small">IT-COMPANY: RuDesktop как основной инструмент аутсорсинговой ИТ-поддержки 200+ клиентов</a>
+							<div class="item-case__bottom">
+								<a class="tag hidden-mobile">Информационные технологии</a>
+								<div class="text-small show-mobile">12 февраля 2026</div>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+					<div class="item-case">
+						<a href="#" class="item-case__image">
+							<img src="img/case_logo1.svg" alt="itsmf">
+						</a>
+						<div class="item-case__content">
+							<div class="text-small hidden-mobile">12 февраля 2026</div>
+							<a class="tag show-mobile">Информационные технологии</a>
+							<a href="#" class="title-small">IT-COMPANY: RuDesktop как основной инструмент аутсорсинговой ИТ-поддержки 200+ клиентов</a>
+							<div class="item-case__bottom">
+								<a class="tag hidden-mobile">Информационные технологии</a>
+								<div class="text-small show-mobile">12 февраля 2026</div>
+								<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn btn--accent btn--full">Посмотреть все кейсы</a>
+			</div>
+			<div class="slider-marquee">
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee1.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee2.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee3.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee4.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee5.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee6.svg" alt="alt">
+					</div>
+				</div>
+				<div>
+					<div class="slider-marquee__item">
+						<img src="img/marquee7.svg" alt="alt">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tariffs">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ тарифы ]</p>
+					<h2 class="title">Тарифы</h2>
+					<p class="description">Оформите подписку на RuDesktop уже сегодня!</p>
+				</div>
+				<div class="tabs-wrapper">
+					<ul class="tabs">
+						<li class="active"><a href="#tab_tariffs1">Для дома</a></li>
+						<li><a href="#tab_tariffs2">Для бизнеса</a></li>
+					</ul>
+					<div class="btn-tab"></div>
+				</div>
+				<div class="tab-container">
+					<div class="tab-pane" id="tab_tariffs1">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="item-tariff">
+									<div class="item-tariff__head">
+										<div class="item-tariff__top">
+											<h3 class="title-middle">Старт</h3>
+										</div>
+										<p>Для личного использования</p>
+										<div class="item-tariff__image">
+											<img src="img/bg_tariff1.jpg" alt="Старт">
+										</div>
+									</div>
+									<div class="item-tariff__content">
+										<ul>
+											<li>Удаленный доступ</li>
+											<li>Облачный сервер RuDesktop</li>
+											<li>Длительность сеансов до 2 часов в сутки <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+											<li>Доступно устройств: до 5 без авторизации, <br>до 25 с авторизацией <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+										</ul>
+										<div class="item-tariff__bottom">
+											<div class="item-tariff__prices">
+												<div class="title-middle">Бесплатно</div>
+											</div>
+											<a href="#" class="btn">Скачать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-tariff item-tariff--main">
+									<div class="item-tariff__head">
+										<div class="item-tariff__top">
+											<h3 class="title-middle">Комфорт</h3>
+											<div class="item-tariff__badge">Популярный выбор</div>
+										</div>
+										<p>Без ограничений по времени</p>
+										<div class="item-tariff__terms">
+											<div class="item-tariff__term">1 мес</div>
+											<div class="item-tariff__term">6 мес -25%</div>
+											<div class="item-tariff__term active">1 год -40%</div>
+										</div>
+										<div class="item-tariff__image">
+											<img src="img/bg_tariff2.jpg" alt="Комфорт">
+										</div>
+									</div>
+									<div class="item-tariff__content">
+										<ul>
+											<li>Удаленный доступ</li>
+											<li>Облачный сервер RuDesktop</li>
+											<li>Без ограничений по времени</li>
+											<li>Доступно устройств: до 100 <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+											<li>Оплата только картой онлайн</li>
+										</ul>
+										<div class="item-tariff__bottom">
+											<div class="item-tariff__action">
+												<div class="text-small">Одновременные подключения  <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></div>
+												<div class="quantity">
+													<div class="quantity-button quantity-down">-</div>
+													<input type="number" min="1" step="1" value="1">
+													<div class="quantity-button quantity-up">+</div>
+												</div>
+											</div>
+											<div class="item-tariff__prices">
+												<div class="title-middle">14 000 ₽</div>
+												<div class="old-price"><span>24 000 ₽</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+											</div>
+											<a href="#" class="btn">Купить</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab_tariffs2">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="item-tariff">
+									<div class="item-tariff__head">
+										<div class="item-tariff__top">
+											<h3 class="title-middle">Старт</h3>
+										</div>
+										<p>Для личного использования</p>
+										<div class="item-tariff__image">
+											<img src="img/bg_tariff1.jpg" alt="Старт">
+										</div>
+									</div>
+									<div class="item-tariff__content">
+										<ul>
+											<li>Удаленный доступ</li>
+											<li>Облачный сервер RuDesktop</li>
+											<li>Длительность сеансов до 2 часов в сутки <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+											<li>Доступно устройств: до 5 без авторизации, <br>до 25 с авторизацией <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+										</ul>
+										<div class="item-tariff__bottom">
+											<div class="item-tariff__prices">
+												<div class="title-middle">Бесплатно</div>
+											</div>
+											<a href="#" class="btn">Скачать</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-tariff item-tariff--main">
+									<div class="item-tariff__head">
+										<div class="item-tariff__top">
+											<h3 class="title-middle">Комфорт</h3>
+											<div class="item-tariff__badge">Популярный выбор</div>
+										</div>
+										<p>Без ограничений по времени</p>
+										<div class="item-tariff__terms">
+											<div class="item-tariff__term">1 мес</div>
+											<div class="item-tariff__term">6 мес -25%</div>
+											<div class="item-tariff__term active">1 год -40%</div>
+										</div>
+										<div class="item-tariff__image">
+											<img src="img/bg_tariff2.jpg" alt="Комфорт">
+										</div>
+									</div>
+									<div class="item-tariff__content">
+										<ul>
+											<li>Удаленный доступ</li>
+											<li>Облачный сервер RuDesktop</li>
+											<li>Без ограничений по времени</li>
+											<li>Доступно устройств: до 100 <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
+											<li>Оплата только картой онлайн</li>
+										</ul>
+										<div class="item-tariff__bottom">
+											<div class="item-tariff__action">
+												<div class="text-small">Одновременные подключения  <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></div>
+												<div class="quantity">
+													<div class="quantity-button quantity-down">-</div>
+													<input type="number" min="1" step="1" value="1">
+													<div class="quantity-button quantity-up">+</div>
+												</div>
+											</div>
+											<div class="item-tariff__prices">
+												<div class="title-middle">14 000 ₽</div>
+												<div class="old-price"><span>24 000 ₽</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+											</div>
+											<a href="#" class="btn">Купить</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="btn btn--accent btn--full">Сравнить тарифы</a>
+			</div>
+		</section>
+
+		<section class="steps">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ начало работы ]</p>
+					<h2 class="title">Три шага до первого <br>удаленного подключения</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4">
+						<div class="item-step">
+							<div class="title-small"><span>01</span> Скачайте клиент</div>
+							<p>Загрузите и установите RuDesktop на устройство, с которого будете подключаться</p>
+							<div class="warning text-small">Windows · Linux · macOS · Android · Astra Linux · Alt Linux РЕД ОС ·  РОСА ·  ОСнова</div>
+							<a href="#" class="link">Скачать бесплатно <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-step">
+							<div class="title-small"><span>01</span> Установите на удаленное устройство</div>
+							<p>Запустите клиент на удаленном компьютере, к которому нужен доступ</p>
+							<div class="warning text-small">Windows · Linux · macOS · Android · Astra Linux · Alt Linux РЕД ОС ·  РОСА ·  ОСнова</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="item-step">
+							<div class="title-small"><span>03</span> Подключитесь</div>
+							<p>Используйте идентификатор устройства или адресную книгу для быстрого соединения</p>
+							<div class="warning text-small">Через облако или собственный сервер</div>
+							<a href="#" class="link">Перейти к тарифам <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="questions">
+			<div class="container">
+				<div class="questions__main">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="questions__info">
+								<div class="head-section">
+									<p class="subtitle">[ вопрос-ответ ]</p>
+									<h2 class="title">Частые вопросы</h2>
+									<p>Ответы на все популярные вопросы вы можете найти в специальном разделе</p>
+									<div class="questions__buttons">
+										<a href="#" class="btn btn--light js-scroll-consult">Нужна консультация</a>
+										<a href="#" class="btn btn--outline">Все вопросы</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="questions__content">
+								<div class="item-question">
+									<div class="item-question__head">Чем RuDesktop отличается от TeamViewer и AnyDesk? <div class="item-question__arrow"></div></div>
+									<div class="item-question__content">
+										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
+									</div>
+								</div>
+								<div class="item-question">
+									<div class="item-question__head">Сколько стоит RuDesktop? <div class="item-question__arrow"></div></div>
+									<div class="item-question__content">
+										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
+									</div>
+								</div>
+								<div class="item-question">
+									<div class="item-question__head">На каких операционных системах работает RuDesktop? <div class="item-question__arrow"></div></div>
+									<div class="item-question__content">
+										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
+									</div>
+								</div>
+								<div class="item-question">
+									<div class="item-question__head">Нужен ли VPN для работы RuDesktop? <div class="item-question__arrow"></div></div>
+									<div class="item-question__content">
+										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
+									</div>
+								</div>
+								<div class="item-question">
+									<div class="item-question__head">Можно ли использовать RuDesktop без установки на компьютер? <div class="item-question__arrow"></div></div>
+									<div class="item-question__content">
+										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<div class="container">
+				<div class="head-section">
+					<p class="subtitle">[ преимущества ]</p>
+					<h2 class="title">Почему <span>RuDesktop?</span></h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Российское ПО</h3>
+							<p>RuDesktop включен в единый реестр российского ПО <a href="https://reestr.digital.gov.ru/reestr/1199208/?sphrase_id=3774776" target="_blank">№15913</a> и <a href="https://reestr.digital.gov.ru/reestr/1864705/?sphrase_id=3774776" target="_blank">№19573</a> и свободен от санкционных рисков</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd1.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Масштабируемость</h3>
+							<p>Подходит как для одного пользователя, так и для распределенной инфраструктуры компании</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd2.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Безопасность</h3>
+							<p>Защищенное соединение HTTPS (443 порт, TLS протокол), удобные инструменты для внутреннего контроля</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd3.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Кроссплатформенность</h3>
+							<p>Работает на Windows, Linux, macOS, Android и на всех российских операционных системах</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd4.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Для любых задач</h3>
+							<p>Удаленный доступ, техническая поддержка, управление устройствами и централизированное администрирование</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd5.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-advantage">
+							<h3 class="title-small">Удобные тарифы</h3>
+							<p>Бесплатная версия для тестирования и личного использования, коммерческие лицензии для профессиональной работы</p>
+							<div class="item-advantage__count">
+								<img src="img/count_avd6.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation__main">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="tab-container-consultation">
+								<div class="tab-pane-consultation" data-tab="tab-consult1">
+									<div class="head-section">
+										<p class="subtitle">[ заявка ]</p>
+										<h2 class="title">Нужна консультация по продукту?</h2>
+										<p class="description">Свяжемся в течение рабочего дня — ответим на ваши вопросы и поможем подобрать решение под ваши задачи</p>
+									</div>
+								</div>
+								<div class="tab-pane-consultation" data-tab="tab-consult2">
+									<div class="head-section">
+										<p class="subtitle">[ заявка ]</p>
+										<h2 class="title">Хотите увидеть продукт в действии?</h2>
+										<p class="description">Проведем персональное демо, покажем все возможности на практике и предоставим бесплатный тестовый период для вашей компании</p>
+									</div>
+								</div>
+								<div class="tab-pane-consultation" data-tab="tab-consult3">
+									<div class="head-section">
+										<p class="subtitle">[ заявка ]</p>
+										<h2 class="title">Подпишитесь <br>на наши email-рассылки</h2>
+										<p class="description">Получайте новости, обновления продукта и полезные материалы прямо на почту — без спама</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="tabs-consultation">
+								<div class="tabs-consultation__btn active" data-title="tab-consult1">
+									<img src="img/ic_consultation1.svg" alt="alt">
+									<span class="title-small">Консультация</span>
+									<span class="text-small">Ответим на вопросы и подберем подходящее решение</span>
+								</div>
+								<div class="tabs-consultation__btn" data-title="tab-consult2">
+									<img src="img/ic_consultation2.svg" alt="alt">
+									<span class="title-small">Демо</span>
+									<span class="text-small">Покажем все возможности продукта на практике</span>
+								</div>
+								<div class="tabs-consultation__btn" data-title="tab-consult3">
+									<img src="img/ic_consultation3.svg" alt="alt">
+									<span class="title-small">Email-рассылка</span>
+									<span class="text-small">Получайте новости и обновления продукта на почту</span>
+								</div>
+							</div>
+							<div class="tab-container-consultation">
+								<div class="tab-pane-consultation" data-tab="tab-consult1">
+									<form>
+										<div class="item-form select-step">
+											<select required >
+												<option value=""disabled selected hidden>Тема обращения*</option>
+												<option value="1">Консультация</option>
+												<option value="1">Запрос КП</option>
+											</select>
+										</div>
+										<div class="item-form select-step select-hidden">
+											<select required >
+												<option value=""disabled selected hidden>Продукт*</option>
+												<option value="1">RuDesktop: Облачный доступ</option>
+												<option value="1">RuDesktop: Локальный сервер</option>
+												<option value="1">RuDesktop UEM</option>
+											</select>
+										</div>
+										<div class="item-form select-step select-hidden">
+											<select required >
+												<option value=""disabled selected hidden>Срок лицензии*</option>
+												<option value="1">1 год</option>
+												<option value="1">Бессрочно</option>
+											</select>
+										</div>
+										<div class="item-form">
+											<input type="text" placeholder="Имя Фамилия*" required>
+										</div>
+										<div class="item-form">
+											<input type="tel" placeholder="Телефон*" class="input-phone" inputmode="numeric" required>
+										</div>
+										<div class="item-form">
+											<input type="email" placeholder="Электронная почта*" inputmode="email" required>
+										</div>
+										<div class="item-form">
+											<input type="text" placeholder="ИНН компании*" required>
+										</div>
+										<div class="item-form">
+											<textarea placeholder="Ваш вопрос*" required></textarea>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required />
+												<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
+											</label>
+										</div>
+										<button class="btn btn--light">Отправить</button>
+									</form>
+								</div>
+								<div class="tab-pane-consultation" data-tab="tab-consult2">
+									<form>
+										<div class="item-form select-step">
+											<select required >
+												<option value=""disabled selected hidden>Какой продукт хотите протестировать?*</option>
+												<option value="1">RuDesktop: Облачный доступ</option>
+												<option value="1">RuDesktop: Локальный сервер</option>
+												<option value="1">RuDesktop UEM</option>
+											</select>
+										</div>
+										<div class="item-form">
+											<input type="text" placeholder="Имя Фамилия*" required>
+										</div>
+										<div class="item-form">
+											<input type="tel" placeholder="Телефон*" class="input-phone" inputmode="numeric" required>
+										</div>
+										<div class="item-form">
+											<input type="email" placeholder="Электронная почта*" inputmode="email" required>
+										</div>
+										<div class="item-form">
+											<input type="text" placeholder="ИНН компании*" required>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required />
+												<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
+											</label>
+										</div>
+										<button class="btn btn--light">Отправить</button>
+									</form>
+								</div>
+								<div class="tab-pane-consultation" data-tab="tab-consult3">
+									<form>
+										<div class="item-form">
+											<input type="email" placeholder="Электронная почта*" inputmode="email" required>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" required />
+												<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
+											</label>
+										</div>
+										<button class="btn btn--light">Отправить</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4">
+						<a href="#" class="logo">
+							<img src="img/logo2.svg" alt="RuDesktop">
+						</a>
+						<div class="footer__descr">ООО «Передовые технологии» — российский разработчик программного обеспечения RuDesktop для удаленного доступа и управления устройствами</div>
+						<div class="footer__item">
+							<img src="img/ic_footer1.svg" alt="alt">
+							Аккредитированная ИТ-компания
+						</div>
+						<div class="footer__item">
+							<img src="img/ic_footer2.svg" alt="alt">
+							Реестр российского ПО <a href="https://reestr.digital.gov.ru/reestr/1199208/?sphrase_id=3774776" target="_blank">№15913</a> и <a href="https://reestr.digital.gov.ru/reestr/1864705/?sphrase_id=3774776" target="_blank">№19573</a>
+						</div>
+						<a href="#" class="footer__download">
+							<img src="img/download_logo.svg" alt="alt">
+						</a>
+					</div>
+					<div class="col-xl-2 col-md-4">
+						<div class="footer__title footer__title--nav">Продукт</div>
+						<ul class="footer__nav">
+							<li><a href="#">RuDesktop</a></li>
+							<li><a href="#">RuDesktop UEM</a></li>
+							<li><a href="#">Возможности</a></li>
+							<li><a href="#">Безопасность</a></li>
+							<li><a href="#">Совместимость и интеграции</a></li>
+							<li><a href="#">Лицензии и сертификаты</a></li>
+						</ul>
+						<a href="#" class="footer__title">Клиенты</a>
+						<a href="#" class="footer__title">Тарифы</a>
+					</div>
+					<div class="col-xl-2 col-md-4">
+						<div class="footer__title footer__title--nav">Решения</div>
+						<ul class="footer__nav">
+							<li><a href="#">По пользователям</a></li>
+							<li><a href="#">По задачам</a></li>
+							<li><a href="#">По отраслям</a></li>
+							<li><a href="#">По операционным системам</a></li>
+						</ul>
+						<div class="footer__title footer__title--nav">Поддержка</div>
+						<ul class="footer__nav">
+							<li><a href="#">Документация</a></li>
+							<li><a href="#">Создать обращение</a></li>
+							<li><a href="#">Регламент техподдержки</a></li>
+							<li><a href="#">Частые вопросы</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-2 col-md-4">
+						<div class="footer__title footer__title--nav">Партнерам</div>
+						<ul class="footer__nav">
+							<li><a href="#">Партнерская <br>программа</a></li>
+							<li><a href="#">Партнеры <br>и дистрибьюторы</a></li>
+							<li><a href="#">Регистрация сделки</a></li>
+						</ul>
+						<div class="footer__title footer__title--nav">Компания</div>
+						<ul class="footer__nav">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Мероприятия</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Медиа-кит</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-2">
+						<div class="footer__contact">
+							<div class="footer__contact-title">Бесплатно по России</div>
+							<a href="tel:88005006857">8 800 500-68-57</a>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-title">Телефон в Москве</div>
+							<a href="tel:84994600057">8 499 460-00-57</a>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-title">Отдел продаж</div>
+							<a href="mailto:sales@rudesktop.ru">sales@rudesktop.ru</a>
+						</div>
+						<div class="footer__contact">
+							<div class="footer__contact-title">Техническая поддержка</div>
+							<a href="mailto:support@rudesktop.ru">support@rudesktop.ru</a>
+						</div>
+						<ul class="socials-list">
+							<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/rt.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+							<li><a href="#" target="_blank"><img src="img/hb.svg" alt="alt"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__associations">
+					<div class="show-mobile">Рекомендовано ассоциациями</div>
+					<div class="row align-items-center">
+						<div class="col-xl-2 hidden-mobile">Рекомендовано ассоциациями</div>
+						<div class="col-xl-2">
+							<div class="footer__associations-item">
+								<img src="img/footer__association1.svg" alt="alt">
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<div class="footer__associations-item">
+								<img src="img/footer__association2.svg" alt="alt">
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<div class="footer__associations-item">
+								<img src="img/footer__association3.svg" alt="alt">
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<div class="footer__associations-item">
+								<img src="img/footer__association4.svg" alt="alt">
+							</div>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<div class="footer__associations-item">
+								<img src="img/footer__association5.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="row">
+						<div class="col-xl-2">
+							<p class="copyright">© 2026 RuDesktop. <br>Все права защищены</p>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<a href="#">Публичная оферта </a>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<a href="#">Пользовательское соглашение</a>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<a href="#">Лицензионная политика</a>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<a href="#">Политика конфиденциальности</a>
+						</div>
+						<div class="col-xl-2 col-md-4">
+							<a href="#">Согласие на обработку персональных данных</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<div id="modal-thanks" class="modal-block">
+		<div class="thanks-modal">
+			<div class="title-middle">Запрос отправлен!</div>
+			<p>Благодарим за обращение! Мы свяжемся с вами в течение 1 рабочего дня, чтобы обсудить детали запроса</p>
+		</div>
+	</div>
+
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.2"></script>
+
+</body>
+</html>
