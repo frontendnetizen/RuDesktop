@@ -3733,7 +3733,7 @@ strong {
 .checkbox--main a {
 	color: inherit;
 }
-.checkbox label input {
+.checkbox--main label input {
 	border-color: #2B2B2B;
 }
 .quantity-form .text-small {
@@ -4269,4 +4269,39 @@ color: #2B2B2B;
 }
 .section-top + .section-solutions {
 	padding-top: 48px;
+}
+.hero-page--it .title {
+	max-width: 642px;
+}
+.challenges .item-for {
+	border: 1px solid #ddd;
+}
+.challenges .item-for {
+	min-height: 372px;
+}
+.item-tools__count {
+	color: #D32D2F;
+}
+.item-tools__count + .title-small {
+	margin-top: 53px;
+}
+.item-tools--gray {
+	border: none;
+	background: #FBFBFB;
+}
+.info-block__buttons {
+	gap: 16px;
+	display: flex;
+	align-items: center;
+}
+.item-form .iti__selected-flag {
+	display: none;
+}
+.item-form .iti--allow-dropdown input.iti__tel-input, 
+.item-form .iti--allow-dropdown input.iti__tel-input[type=text], 
+.item-form .iti--allow-dropdown input.iti__tel-input[type=tel], 
+.item-form .iti--show-selected-dial-code input.iti__tel-input, 
+.item-form .iti--show-selected-dial-code input.iti__tel-input[type=text], 
+.item-form .iti--show-selected-dial-code input.iti__tel-input[type=tel] {
+	padding-left: 16px;
 }
