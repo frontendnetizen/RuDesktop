@@ -34,6 +34,25 @@ $(document).ready(function() {
     $(this).siblings().slideToggle(200);
   });
 
+  //hint position
+  $('.hint').on('mouseenter', function() {
+        var $hint = $(this);
+        var $content = $hint.find('.hint__content');
+        
+        $hint.removeClass('hint--left hint--right');
+
+        var contentWidth = $content.outerWidth();
+        var contentOffsetLeft = $content.offset().left;
+        var windowWidth = $(window).width();
+
+        if (contentOffsetLeft + contentWidth > windowWidth) {
+            $hint.addClass('hint--left');
+        } 
+        else if (contentOffsetLeft < 0) {
+            $hint.addClass('hint--right');
+        }
+    });
+
   //filters
   $('.filter-page__btn').on('click', function () {
         const $btn = $(this);

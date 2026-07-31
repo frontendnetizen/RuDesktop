@@ -997,6 +997,7 @@ section {
 	width: 16px;
 	height: 16px;
 	flex: none;
+	font-weight: 450;
 	color: #2b2b2B;
 	background-image: url(../img/ic_help.svg);
 	background-repeat: no-repeat;
@@ -4304,4 +4305,28 @@ color: #2B2B2B;
 .item-form .iti--show-selected-dial-code input.iti__tel-input[type=text], 
 .item-form .iti--show-selected-dial-code input.iti__tel-input[type=tel] {
 	padding-left: 16px;
+}
+.hint--left .hint__content {
+	margin-right: 15px;
+	right: 100%;
+	margin-left: 0;
+	left: auto;
+}
+.hint--left .hint__content::before {
+	left: 100%;
+	transform: scale(-1, -1);
+	right: auto;
+}
+.item-tools.item-tools--about {
+	min-height: 154px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.item-tools.item-tools--about .title-middle {
+	color: #D32D2F;
+	margin-bottom: auto;
+}
+.tariffs {
+	overflow: hidden;
 }
