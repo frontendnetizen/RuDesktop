@@ -436,525 +436,386 @@
 			</div>
 		</header>
 
-		<section class="hero-page hero-page--home">
+		<section class="section-top">
 			<div class="container">
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
-					<li>Для дома</li>
+					<li>Решения</li>
 				</ul>
-				<div class="hero-page__main">
-					<div class="badge-category badge-category--dot">Российское ПО</div>
-					<h1 class="title">Удаленный доступ <br>к компьютеру для дома бесплатно</h1>
-					<p class="description">RuDesktop — бесплатная программа удаленного доступа к домашнему компьютеру. Подключайтесь к своему ПК из командировки, помогайте родственникам с компьютером удаленно, работайте из дома без VPN и сложных настроек. Бесплатно 2 часа в день.</p>
-					<div class="hero-page__buttons">
-						<a href="#" class="btn">Скачать бесплатно</a>
-						<a href="#" class="btn btn--accent"> Посмотреть тарифы</a>
-					</div>
-					<div class="hero-page__picture">
-						<picture>
-							<source media="(min-width: 1200px)" srcset="img/hero_home.jpg">
-							<source media="(min-width: 767px)" srcset="img/hero_home_tablet.jpg">
-							<img src="img/hero_home_mobile.jpg" alt="alt">
-						</picture>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="for-whom">
-			<div class="container">
 				<div class="head-section">
-					<p class="subtitle">[ для кого ]</p>
-					<h2 class="title">Используйте удаленный доступ для работы, помощи и повседневных задач</h2>
+					<h1 class="title">Все решения</h1>
+					<p class="description">RuDesktop предлагает инструменты для удаленного доступа, управления и поддержки устройств, которые подходят разным пользователям, задачам, отраслям или операционным системам</p>
 				</div>
-				<div class="row">
-					<div class="col-xl-6 col-12">
-						<div class="item-for">
-							<div class="item-for__content">
-								<div class="title-small">Удаленная работа</div>
-								<p>Получайте доступ к своему офисному или домашнему компьютеру в командировке, на больничном или при работе из дома</p>
-							</div>
-							<div class="item-for__image">
-								<picture>
-									<source media="(min-width: 767px)" srcset="img/for1.jpg">
-									<img src="img/for1_mob.jpg" alt="Удаленная работа">
-								</picture>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-6">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="item-for item-for--color">
-									<div class="item-for__content">
-										<div class="title-small">Фриланс</div>
-									</div>
-									<div class="item-for__bottom">Работайте удаленно из любого места, где есть интернет</div>
-									<div class="item-for__image">
-										<picture>
-											<source media="(min-width: 767px)" srcset="img/for2.jpg">
-											<img src="img/for2.jpg" alt="Фриланс">
-										</picture>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="item-for">
-									<div class="item-for__content">
-										<div class="title-small">Совместная работа</div>
-										<p>Подключайтесь к компьютерам коллег и клиентов, демонстрируйте экран и совместно решайте задачи</p>
-									</div>
-									<div class="item-for__image">
-										<picture>
-											<source media="(min-width: 767px)" srcset="img/for3.jpg">
-											<img src="img/for3.jpg" alt="Совместная работа">
-										</picture>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-5">
-						<div class="item-for item-for--color">
-							<div class="item-for__content">
-								<div class="title-small">Услуги</div>
-								<p>Оказывайте бухгалтерские, юридические, образовательные и другие услуги дистанционно</p>
-							</div>
-							<div class="item-for__image">
-								<picture>
-									<source media="(min-width: 767px)" srcset="img/for4.jpg">
-									<img src="img/for4_mob.jpg" alt="Услуги">
-								</picture>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-7">
-						<div class="item-for">
-							<div class="item-for__content">
-								<div class="title-small">Помощь близким</div>
-								<p>Подключитесь к компьютеру близкого человека удаленно и помогите решить любую задачу: установить программу, настроить Windows, разобраться с документами. Не нужно ехать через весь город — достаточно 5 минут и стабильного интернета</p>
-							</div>
-							<div class="item-for__image">
-								<picture>
-									<source media="(min-width: 767px)" srcset="img/for5.jpg">
-									<img src="img/for5.jpg" alt="Помощь близким">
-								</picture>
-							</div>
-						</div>
-					</div>
+				<div class="filter-page-wrapper">
+					<ul class="filter-page">
+						<button class="filter-page__btn active" data-filter="all">Все</button>
+						<button class="filter-page__btn" data-filter="users">По пользователям</button>
+						<button class="filter-page__btn" data-filter="tasks">По задачам</button>
+						<button class="filter-page__btn" data-filter="branches">По отраслям</button>
+						<button class="filter-page__btn" data-filter="os">По операционным системам</button>
+					</ul>
+					<div class="btn-filter"></div>
 				</div>
 			</div>
 		</section>
 
-		<section class="functional-access">
+		<section class="section-solutions" data-tab="users">
 			<div class="container">
-				<div class="head-section">
-					<p class="subtitle">[ функционал ]</p>
-					<h2 class="title">Возможности удаленного доступа</h2>
-				</div>
-				<div class="row">
-					<div class="col-xl-6">
-						<ul class="tabs-functional">
-							<li class="active">
-								<a href="#tab_func1">
-									<img src="img/tab_functional1.svg" alt="Передача файлов">
-									<span class="title-small">Передача файлов</span>
-									<span class="descr-tabs">Быстро отправляйте и получайте файлы между подключенными устройствами</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func2">
-									<img src="img/tab_functional2.svg" alt="Адресная книга">
-									<span class="title-small">Адресная книга</span>
-									<span class="descr-tabs">Храните список устройств для быстрого подключения. Бесплатно и без ограничений</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func3">
-									<img src="img/tab_functional3.svg" alt="Удаленная перезагрузка">
-									<span class="title-small">Удаленная перезагрузка</span>
-									<span class="descr-tabs">Перезапускайте удаленный компьютер прямо во время сессии без потери соединения</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func4">
-									<img src="img/tab_functional4.svg" alt="Совместная работа">
-									<span class="title-small">Совместная работа</span>
-									<span class="descr-tabs">Работайте вместе на одном компьютере: редактируйте документы, таблицы, графику и другие файлы</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func5">
-									<img src="img/tab_functional5.svg" alt="Текстовый чат">
-									<span class="title-small">Текстовый чат</span>
-									<span class="descr-tabs">Работайте вместе на одном компьютере: редактируйте документы, таблицы, графику и другие файлы</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func6">
-									<img src="img/tab_functional6.svg" alt="История подключений">
-									<span class="title-small">История подключений</span>
-									<span class="descr-tabs">Просматривайте историю всех удаленных подключений за время использования RuDesktop</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab_func7">
-									<img src="img/tab_functional7.svg" alt="Неограниченное количество устройств">
-									<span class="title-small">Неограниченное количество устройств</span>
-									<span class="descr-tabs">Работать можно как с компьютера, так и со смартфона из любой точки мира, где есть интернет</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-xl-6">
-						<div class="tab-container-functional">
-							<div class="tab-pane-functional" id="tab_func1">
-								<div class="functional-access__image">
-									<img src="img/functional_access1.jpg" alt="Передача файлов">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func2">
-								<div class="functional-access__image">
-									<img src="img/functional_access2.jpg" alt="Адресная книга">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func3">
-								<div class="functional-access__image">
-									<img src="img/functional_access3.jpg" alt="Удаленная перезагрузка">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func4">
-								<div class="functional-access__image">
-									<img src="img/functional_access4.jpg" alt="Совместная работа">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func5">
-								<div class="functional-access__image">
-									<img src="img/functional_access5.jpg" alt="Текстовый чат">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func6">
-								<div class="functional-access__image">
-									<img src="img/functional_access6.jpg" alt="История подключений">
-								</div>
-							</div>
-							<div class="tab-pane-functional" id="tab_func7">
-								<div class="functional-access__image">
-									<img src="img/functional_access7.jpg" alt="Неограниченное количество устройств">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="btn btn--accent btn--full">Узнать больше</a>
-			</div>
-		</section>
-
-		<section class="video">
-			<div class="container">
-				<div class="head-section">
-					<p class="subtitle">[ видео ]</p>
-					<h2 class="title">Посмотрите, как работает RuDesktop</h2>
-					<p class="description">Короткая демонстрация интерфейса и возможностей программы</p>
-				</div>
-				<div class="video-main">
-					<video width="100%" data-keepplaying height="auto" preload="auto">
-						<source src="img/video1.mp4" type="video/mp4"></source> 
-					</video>
-					<div class="video-main__play"></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="tariffs">
-			<div class="container">
-				<div class="head-section">
-					<p class="subtitle">[ тарифы ]</p>
-					<h2 class="title">Выберите удобный <br>формат использования</h2>
-					<p class="description">Начните бесплатно — для большинства личных задач этого достаточно. Платная лицензия открывает дополнительные возможности</p>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="item-tariff">
-							<div class="item-tariff__head">
-								<div class="item-tariff__top">
-									<h3 class="title-middle">Старт</h3>
-								</div>
-								<p>Для личного использования</p>
-								<div class="item-tariff__image">
-									<img src="img/bg_tariff1.jpg" alt="Старт">
-								</div>
-							</div>
-							<div class="item-tariff__content">
-								<ul>
-									<li>Удаленный доступ</li>
-									<li>Облачный сервер RuDesktop</li>
-									<li>Длительность сеансов до 2 часов в сутки <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
-									<li>Доступно устройств: до 5 без авторизации, <br>до 25 с авторизацией <div class="hint"><div class="hint__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div></div></li>
-								</ul>
-								<div class="item-tariff__bottom">
-									<div class="item-tariff__prices">
-										<div class="title-middle">Бесплатно</div>
-									</div>
-									<a href="#" class="btn">Скачать</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="item-tariff item-tariff--main">
-							<div class="item-tariff__head">
-								<div class="item-tariff__top">
-									<h3 class="title-middle">Комфорт</h3>
-									<div class="item-tariff__badge">Популярный выбор</div>
-								</div>
-								<p>Без ограничений по времени</p>
-								<div class="item-tariff__terms">
-									<div class="item-tariff__term">1 мес</div>
-									<div class="item-tariff__term">6 мес -25%</div>
-									<div class="item-tariff__term active">1 год -40%</div>
-								</div>
-								<div class="item-tariff__image">
-									<img src="img/bg_tariff2.jpg" alt="Комфорт">
-								</div>
-							</div>
-							<div class="item-tariff__content">
-								<ul>
-									<li>Удаленный доступ</li>
-									<li>Облачный сервер RuDesktop</li>
-									<li>Без ограничений по времени</li>
-									<li>Доступно устройств: до 100 <div class="hint"><div class="hint__content">Количество уникальных устройств, к которым можно подключаться за весь период действия лицензии. <br><br>Если действует лимит, то при его достижении новые устройства, к которым вы хотите подключиться,  будут недоступны.</div></div></li>
-									<li>Оплата только картой онлайн</li>
-								</ul>
-								<div class="item-tariff__bottom">
-									<div class="item-tariff__action">
-										<div class="text-small">Одновременные подключения  <div class="hint"><div class="hint__content">Это количество подключений к удаленным устройствам, которые могут быть активны в один и тот же момент времени. <br><br>При этом одно подключение — это один активный сеанс с одного устройства. <br><br>С одного компьютера можно вести несколько сеансов одновременно, но каждый сеанс требует отдельного подключения.</div></div></div>
-										<div class="quantity">
-											<div class="quantity-button quantity-down">-</div>
-											<input type="number" min="1" step="1" value="1">
-											<div class="quantity-button quantity-up">+</div>
-										</div>
-									</div>
-									<div class="item-tariff__prices">
-										<div class="title-middle">14 000 ₽</div>
-										<div class="old-price"><span>24 000 ₽</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
-									</div>
-									<a href="#" class="btn">Купить</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="btn btn--accent btn--full">Сравнить тарифы</a>
-			</div>
-		</section>
-
-		<section class="start">
-			<div class="container">
-				<div class="start__main">
-					<div class="row align-items-center">
-						<div class="col-xl-6">
-							<div class="start__content">
-								<div class="head-section">
-									<p class="subtitle">[ старт ]</p>
-									<h2 class="title">Когда стоит выбрать платную версию?</h2>
-									<p class="description">Когда стоит выбрать платную версию?</p>
-								</div>
-								<ul>
-									<li>Регулярно подключаетесь к нескольким устройствам</li>
-									<li>Используете удаленный доступ для работы и помощи</li>
-									<li>Нужны расширенные возможности подключения</li>
-								</ul>
-								<div class="start__buttons">
-									<a href="#" class="btn btn--light">Перейти к тарифам</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="start__image">
-								<img src="img/start.png" alt="alt">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="advantages">
-			<div class="container">
-				<div class="head-section">
-					<p class="subtitle">[ преимущества ]</p>
-					<h2 class="title">Почему <span>RuDesktop?</span></h2>
-				</div>
-				<div class="row">
+				<h2 class="title-middle">По пользователям</h2>
+				<div class="row row--solutions">
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Бесплатная версия</h3>
-							<p>Используйте ПО до 2 часов подключений в день абсолютно бесплатно</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd1.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_1.svg" alt="ИТ-отделы">
 							</div>
+							<h3 class="title-small">ИТ-отделы</h3>
+							<div class="item-box__text">
+								<p>Удаленная поддержка сотрудников, администрирование устройств и контроль ИТ-инфраструктуры из единой системы</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Работа на популярных ОС</h3>
-							<p>Подключайтесь к Windows, Linux (включая отечественные ОС), macOS и Android</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd2.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_2.svg" alt="Малый и средний бизнес">
 							</div>
+							<h3 class="title-small">Малый и средний бизнес</h3>
+							<div class="item-box__text">
+								<p>Удаленный доступ к рабочим компьютерам сотрудников без сложной инфраструктуры и дополнительных ИТ-ресурсов</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Простая настройка</h3>
-							<p>Используйте возможности ПО сразу после установки без длительной настройки</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd3.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_3.svg" alt="Крупные предприятия">
 							</div>
+							<h3 class="title-small">Крупные предприятия</h3>
+							<div class="item-box__text">
+								<p>Централизованное управление большим количеством устройств и автоматизация задач администрирования</p>
+							</div>
+						
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Быстрое подключение</h3>
-							<p>Подключайтесь к компьютерам по ID или через адресную книгу за пару секунд</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd4.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_4.svg" alt="Госкорпорации">
 							</div>
+							<h3 class="title-small">Госкорпорации</h3>
+							<div class="item-box__text">
+								<p>Отечественное решение для удаленного доступа и управления инфраструктурой в защищенных контурах</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Работает из любой сети</h3>
-							<p>Подключайтесь к устройствам из дома или офиса</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd5.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_5.svg" alt="Фрилансеры">
 							</div>
+							<h3 class="title-small">Фрилансеры</h3>
+							<div class="item-box__text">
+								<p>Удаленный доступ к рабочему компьютеру и программам с любого устройства</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 					<div class="col-xl-4 col-md-6">
-						<div class="item-advantage">
-							<h3 class="title-small">Безопасное соединение</h3>
-							<p>Передача данных защищена современными алгоритмами шифрования</p>
-							<div class="item-advantage__count">
-								<img src="img/count_avd6.svg" alt="alt">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy1_6.svg" alt="Личное использование">
 							</div>
+							<h3 class="title-small">Личное использование</h3>
+							<div class="item-box__text">
+								<p>Удаленный доступ к домашнему компьютеру и помощь близким в решении технических проблем</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="steps">
+		<section class="section-solutions" data-tab="tasks">
 			<div class="container">
-				<div class="head-section">
-					<p class="subtitle">[ начало работы ]</p>
-					<h2 class="title">Три шага до первого <br>удаленного подключения</h2>
-				</div>
-				<div class="row">
-					<div class="col-xl-3 col-md-6">
-						<div class="item-step item-step--main">
-							<div class="title-small"><span>01</span> Скачайте клиент</div>
-							<p>Скачайте и установите RuDesktop за несколько минут</p>
-							<a href="#" class="link">Скачать бесплатно <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="item-step item-step--main">
-							<div class="title-small"><span>01</span> Узнайте ID устройства</div>
-							<p>Каждому компьютеру автоматически присваивается уникальный ID</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="item-step item-step--main">
-							<div class="title-small"><span>03</span> Подключитесь</div>
-							<p>Введите уникальный ID устройства для подключения по защищенному каналу</p>
-						</div>
-					</div>
-					<div class="col-xl-3 col-md-6">
-						<div class="item-step item-step--main">
-							<div class="title-small"><span>03</span> Работайте удаленно</div>
-							<p>Получите полный доступ к компьютеру и используйте программы и файлы.</p>
-							<a href="#" class="link">Перейти к тарифам <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="start">
-			<div class="container">
-				<div class="start__main start__main--page">
-					<div class="start__content">
-						<div class="head-section">
-							<p class="subtitle">[ старт ]</p>
-							<h2 class="title">Начните пользоваться RuDesktop уже сегодня</h2>
-							<p class="description">Получите удобный и безопасный удаленный доступ к компьютерам</p>
-						</div>
-						<div class="start__buttons">
-							<a href="#" class="btn">Перейти к тарифам</a>
-							<a href="#" class="btn btn--accent">Скачать бесплатно</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="questions">
-			<div class="container">
-				<div class="questions__main">
-					<div class="row">
-						<div class="col-xl-6">
-							<div class="questions__info">
-								<div class="head-section">
-									<p class="subtitle">[ вопрос-ответ ]</p>
-									<h2 class="title">Частые вопросы</h2>
-									<p>Ответы на все популярные вопросы вы можете найти в специальном разделе</p>
-									<div class="questions__buttons">
-										<a href="#" class="btn btn--outline">Все вопросы</a>
-									</div>
-								</div>
+				<h2 class="title-middle">По задачам</h2>
+				<div class="row row--solutions">
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy2_1.svg" alt="Удаленный доступ и поддержка">
 							</div>
-						</div>
-						<div class="col-xl-6">
-							<div class="questions__content">
-								<div class="item-question">
-									<div class="item-question__head">Чем RuDesktop отличается от TeamViewer и AnyDesk? <div class="item-question__arrow"></div></div>
-									<div class="item-question__content">
-										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
-									</div>
-								</div>
-								<div class="item-question">
-									<div class="item-question__head">Сколько стоит RuDesktop? <div class="item-question__arrow"></div></div>
-									<div class="item-question__content">
-										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
-									</div>
-								</div>
-								<div class="item-question">
-									<div class="item-question__head">На каких операционных системах работает RuDesktop? <div class="item-question__arrow"></div></div>
-									<div class="item-question__content">
-										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
-									</div>
-								</div>
-								<div class="item-question">
-									<div class="item-question__head">Нужен ли VPN для работы RuDesktop? <div class="item-question__arrow"></div></div>
-									<div class="item-question__content">
-										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
-									</div>
-								</div>
-								<div class="item-question">
-									<div class="item-question__head">Можно ли использовать RuDesktop без установки на компьютер? <div class="item-question__arrow"></div></div>
-									<div class="item-question__content">
-										<p>RuDesktop — это российское программное обеспечение для удаленного доступа к компьютерам и управления парком устройств. Продукт предназначен для системных администраторов, ИТ-отделов компаний и государственных организаций, которым необходимо организовать безопасный удаленный доступ к рабочим станциям и серверам внутри корпоративной инфраструктуры.</p>
-									</div>
-								</div>
+							<h3 class="title-small">Удаленный доступ и поддержка</h3>
+							<div class="item-box__text">
+								<p>Подключение к компьютерам пользователей для диагностики и устранения проблем без выезда</p>
 							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy2_2.svg" alt="Удаленное управление">
+							</div>
+							<h3 class="title-small">Удаленное управление</h3>
+							<div class="item-box__text">
+								<p>Администрирование устройств, выполнение команд и управление инфраструктурой на расстоянии</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy2_3.svg" alt="Удаленный рабочий стол">
+							</div>
+							<h3 class="title-small">Удаленный рабочий стол</h3>
+							<div class="item-box__text">
+								<p>Полный доступ к рабочему столу удаленного компьютера с возможностью работы в привычной среде.</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy2_4.svg" alt="Совместное использование экрана">
+							</div>
+							<h3 class="title-small">Совместное использование экрана</h3>
+							<div class="item-box__text">
+								<p>Возможность работы на нескольких экранах удаленно между устройствами</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy2_5.svg" alt="Инвентаризация ПО и оборудования">
+							</div>
+							<h3 class="title-small">Инвентаризация ПО и оборудования</h3>
+							<div class="item-box__text">
+								<p>Учет устройств и установленного программного обеспечения в инфраструктуре компании.</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="section-solutions" data-tab="branches">
+			<div class="container">
+				<h2 class="title-middle">По отраслям</h2>
+				<div class="row row--solutions">
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_1.svg" alt="Информационные технологии">
+							</div>
+							<h3 class="title-small">Информационные технологии</h3>
+							<div class="item-box__text">
+								<p>Удаленная поддержка пользователей, администрирование рабочих станций и серверов, управление инфраструктурой из одной системы</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_2.svg" alt="Финансы">
+							</div>
+							<h3 class="title-small">Финансы</h3>
+							<div class="item-box__text">
+								<p>Удаленная поддержка рабочих мест сотрудников и безопасное администрирование банковских и финансовых систем</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_3.svg" alt="Энергетика">
+							</div>
+							<h3 class="title-small">Энергетика</h3>
+							<div class="item-box__text">
+								<p>Удаленное управление компьютерами и серверами на распределенных объектах, диспетчерских и инженерных системах</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_4.svg" alt="Промышленность">
+							</div>
+							<h3 class="title-small">Промышленность</h3>
+							<div class="item-box__text">
+								<p>Администрирование рабочих станций инженеров и операторов, поддержка производственных систем и инфраструктуры предприятия</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_5.svg" alt="Транспорт и логистика">
+							</div>
+							<h3 class="title-small">Транспорт и логистика</h3>
+							<div class="item-box__text">
+								<p>Удаленная поддержка компьютеров в офисах, терминалах, диспетчерских и логистических центрах</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy3_6.svg" alt="Торговля">
+							</div>
+							<h3 class="title-small">Торговля</h3>
+							<div class="item-box__text">
+								<p>Удаленная поддержка компьютеров и POS-систем в магазинах и торговых сетях без выезда специалистов</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-solutions" data-tab="os">
+			<div class="container">
+				<h2 class="title-middle">По операционным системам</h2>
+				<div class="row row--solutions">
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_1.svg" alt="Windows">
+							</div>
+							<h3 class="title-small">Windows</h3>
+							<div class="item-box__text">
+								<p>Полная совместимость: Windows 7, 8, 10, 11, Server 2012 и новее, x32 и x64</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_2.svg" alt="Linux (Ubuntu, Debian и Arch Linux)">
+							</div>
+							<h3 class="title-small">Linux (Ubuntu, Debian и Arch Linux)</h3>
+							<div class="item-box__text">
+								<p>Поддержка популярных дистрибутивов Linux в одном пакете</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_3.svg" alt="macOS">
+							</div>
+							<h3 class="title-small">macOS</h3>
+							<div class="item-box__text">
+								<p>macOS</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_4.svg" alt="Android">
+							</div>
+							<h3 class="title-small">Android</h3>
+							<div class="item-box__text">
+								<p>Мобильный клиент: подключение с телефона или планшета Android к любому ПК</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_5.svg" alt="Портативная версия">
+							</div>
+							<h3 class="title-small">Портативная версия</h3>
+							<div class="item-box__text">
+								<p>Запуск без установки на Windows — с USB или локального файла</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_6.svg" alt="Astra Linux">
+							</div>
+							<h3 class="title-small">Astra Linux</h3>
+							<div class="item-box__text">
+								<p>Сертифицированная совместимость с отечественной ОС Astra Linux</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_7.svg" alt="Alt Linux">
+							</div>
+							<h3 class="title-small">Alt Linux</h3>
+							<div class="item-box__text">
+								<p>Поддержка Alt Linux для корпоративных и государственных инфраструктур</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_8.svg" alt="РЕД ОС">
+							</div>
+							<h3 class="title-small">РЕД ОС</h3>
+							<div class="item-box__text">
+								<p>Удаленный доступ и управление в средах на базе РЕД ОС</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_9.svg" alt="РОСА">
+							</div>
+							<h3 class="title-small">РОСА</h3>
+							<div class="item-box__text">
+								<p>Удаленный доступ и администрирование на базе российской ОС РОСА для рабочих станций</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="item-box">
+							<div class="item-box__icon">
+								<img src="img/ic_possibilitiy4_10.svg" alt="ОСнова">
+							</div>
+							<h3 class="title-small">ОСнова</h3>
+							<div class="item-box__text">
+								<p>Удаленное подключение на базе отечественной операционной системы ОСнова</p>
+							</div>
+							<a href="#" class="link">Подробнее <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
@@ -962,7 +823,7 @@
 						<a href="#" class="logo">
 							<img src="img/logo2.svg" alt="RuDesktop">
 						</a>
-						<div class="footer__descr">ООО «Передовые технологии» — российский разработчик программного обеспечения RuDesktop для удаленного доступа и управления устройствами</div>
+						<div class="footer__descr">ООО «Передовые технологии» — российский разработчик программного обеспечения RuDesktop для удаленного доступа и управления устройствами</div>
 						<div class="footer__item">
 							<img src="img/ic_footer1.svg" alt="alt">
 							Аккредитированная ИТ-компания
@@ -1110,6 +971,112 @@
 		<div class="thanks-modal">
 			<div class="title-middle">Запрос отправлен!</div>
 			<p>Благодарим за обращение! Мы свяжемся с вами в течение 1 рабочего дня, чтобы обсудить детали запроса</p>
+		</div>
+	</div>
+
+	<div id="get-kp-1" class="modal-block">
+		<div class="modal-wrap">
+			<div class="head-modal">
+				<div class="title-middle">Запрос коммерческого предложения</div>
+				<div class="descr-modal">
+					<p>Тариф: <span>Бизнес Сервер, бессрочно</span></p>
+					<p>Заполните форму и наш менеджер свяжется с вами для подготовки коммерческого предложения по выбранному тарифу</p>
+				</div>
+			</div>
+			<form>
+				<div class="control-form">
+					<input type="text" required>
+					<div class="control-form__label">Имя Фамилия*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="text" class="input-phone" required>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="email" inputmode="email" required>
+					<div class="control-form__label">Электронная почта*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="text" required>
+					<div class="control-form__label">ИНН компании*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="quantity-form">
+					<div class="text-small">Одновременные подключения  <div class="hint"><div class="hint__content">Это количество подключений к удаленным устройствам, которые могут быть активны в один и тот же момент времени. <br><br>При этом одно подключение — это один активный сеанс с одного устройства. <br><br>С одного компьютера можно вести несколько сеансов одновременно, но каждый сеанс требует отдельного подключения.</div></div></div>
+					<div class="quantity quantity--main">
+						<div class="quantity-button quantity-down">-</div>
+						<input type="number" min="1" step="1" value="1">
+						<div class="quantity-button quantity-up">+</div>
+					</div>
+				</div>
+				<div class="control-form">
+					<textarea></textarea>
+					<div class="control-form__label">Дополнительный комментарий</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="checkbox checkbox--main">
+					<label>
+						<input type="checkbox" required />
+						<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
+					</label>
+				</div>
+				<button class="btn btn--full">Отправить</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="get-kp-2" class="modal-block">
+		<div class="modal-wrap">
+			<div class="head-modal">
+				<div class="title-middle">Запрос коммерческого предложения</div>
+				<div class="descr-modal">
+					<p>Тариф: <span> Инфраструктура, 1 год</span></p>
+					<p>Заполните форму и наш менеджер свяжется с вами для подготовки коммерческого предложения по выбранному тарифу</p>
+				</div>
+			</div>
+			<form>
+				<div class="control-form">
+					<input type="text" required>
+					<div class="control-form__label">Имя Фамилия*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="text" class="input-phone" required>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="email" inputmode="email" required>
+					<div class="control-form__label">Электронная почта*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="control-form">
+					<input type="text" required>
+					<div class="control-form__label">ИНН компании*</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="quantity-form">
+					<div class="text-small">Одновременные подключения  <div class="hint"><div class="hint__content">Это количество подключений к удаленным устройствам, которые могут быть активны в один и тот же момент времени. <br><br>При этом одно подключение — это один активный сеанс с одного устройства. <br><br>С одного компьютера можно вести несколько сеансов одновременно, но каждый сеанс требует отдельного подключения.</div></div></div>
+					<div class="quantity quantity--main">
+						<div class="quantity-button quantity-down">-</div>
+						<input type="number" min="1" step="1" value="1">
+						<div class="quantity-button quantity-up">+</div>
+					</div>
+				</div>
+				<div class="control-form">
+					<textarea></textarea>
+					<div class="control-form__label">Дополнительный комментарий</div>
+					<div class="control-form__clear"></div>
+				</div>
+				<div class="checkbox checkbox--main">
+					<label>
+						<input type="checkbox" required />
+						<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
+					</label>
+				</div>
+				<button class="btn btn--full">Отправить</button>
+			</form>
 		</div>
 	</div>
 
