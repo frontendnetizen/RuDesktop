@@ -34,6 +34,21 @@ $(document).ready(function() {
     $(this).siblings().slideToggle(200);
   });
 
+//text registration radio
+$('input[name="register"]').on('change', function() {
+    let selectedText = $(this).data('text');
+    
+    $('.txt-radio').text(selectedText);
+  });
+
+
+  	/*input file*/
+	$("input[type='file']").change(function () {
+		var filename_text = $(this).parent().siblings(".name-upload");
+		var filename = $(this).val().replace(/.*\\/, "");
+		filename_text.html(filename);
+	});
+
   //hint position
   $('.hint').on('mouseenter', function() {
         var $hint = $(this);
@@ -90,6 +105,29 @@ $(document).ready(function() {
 			$(this).parent().slideUp(200);
 		});
 	});
+
+
+  //nav questions
+     	$('.nav-question-wrapper').each(function () {
+		var currentTab = $(this);
+		var initalTextTab = currentTab.find(".nav-questions .active a").html();
+		currentTab.find(".btn-nav-question").html(initalTextTab);
+	});
+	$('.btn-nav-question').click(function () {
+		$(this).toggleClass("active");
+		$(this).siblings(".nav-questions").slideToggle(200);
+		$('.nav-question-wrapper .nav-questions a').click(function (event) {
+			$(this).parent().parent().slideUp(200);
+
+		});
+	});
+
+    $('.nav-questions a').on('click', function () {
+        var textTab = $(this).html();
+      $(this).parent().parent().siblings(".btn-nav-question").html(textTab);
+           $(".btn-nav-question").removeClass("active");
+
+    });
 
   //video
 $('.video-main').on('click', function () {
@@ -171,6 +209,25 @@ $('video').on('ended', function () {
 		]
 	});
 
+  $('.slider-three').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		touchThreshold: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6L9 12L15 18" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></div>',
+		nextArrow: '<div class="slick-next slick-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></div>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					variableWidth: true
+				}
+			}
+		]
+	});
+
 	//text about
 	 $('.show-about').click(function(event) {
     event.preventDefault();
@@ -202,7 +259,7 @@ $('video').on('ended', function () {
 		});
 	});
 
-		$('.tabs-wrapper .tabs li a').click(function (e) {
+		$('.tabs-wrapper .tabs:not(.no-tabs) li a').click(function (e) {
 			e.preventDefault();
 		var textTab = $(this).html();
 		$(this).parent().parent().siblings(".btn-tab").html(textTab);
@@ -210,7 +267,7 @@ $('video').on('ended', function () {
 	});
 
 
-    $('.tabs li a').click(function(event) {
+    $('.tabs:not(.no-tabs) li a').click(function(event) {
     event.preventDefault();
     $(this).parent().parent().find("li").removeClass('active');
     $(this).parent().addClass('active');
@@ -558,7 +615,7 @@ const $scrollBlock = $('.scroll-checkout');
   }, 800); 
 });
 
-$('.tariffs-links a').on('click', function(e) {
+$('.tariffs-links a, .link-scroll, .nav-questions a, .nav-article a').on('click', function(e) {
   e.preventDefault();
   
   var targetId = $(this).attr('href');
@@ -568,6 +625,13 @@ $('.tariffs-links a').on('click', function(e) {
       scrollTop: $(targetId).offset().top - headerHeight
   }, 800); 
 });
+
+
+$('.nav-questions a').on('click', function(e) {
+ $(this).parent().addClass("active");
+ $(this).parent().siblings().removeClass("active");
+});
+
 
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox({
