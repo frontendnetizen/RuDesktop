@@ -782,6 +782,41 @@
         margin-left: 0;
         top: 0;
     }
+    .item-box__link {
+        display: block;
+    }
+    .unit-location .row,
+    .unit-location .row>div {
+        margin-bottom: 0;
+    }
+    .unit-location__descr {
+        margin-bottom: 24px;
+    }
+    .item-box__link .link {
+        flex-wrap: wrap;
+    }
+    .link__inner {
+        gap: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .head-page {
+        margin-bottom: 40px;
+    }
+    .page-error {
+        padding-top: 10px;
+    }
+    .error-main {
+        height: 500px;
+        padding: 32px;
+    }
+    .error-main .btn {
+        margin-top: 20px;
+    }
+    .error-main .title {
+        margin-bottom: 15px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -2249,6 +2284,70 @@
     .about-vacancy {
         padding: 24px;
     }
+    .item-box--contacts {
+        padding: 24px;
+        min-height: initial;
+    }
+    .item-box--contacts .title-small {
+        margin-bottom: 24px;
+    }
+    .item-box__link .link {
+        font-size: 14px;
+    }
+    .unit-location {
+        padding: 24px;
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .item-requisite {
+        flex-wrap: wrap;
+    }
+    .item-requisite__title {
+        width: 100%;
+    }
+    .head-page {
+        padding: 24px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .single-article--page {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .error-main {
+        background-size: 490px auto;
+        background-position: 50% 30%;
+        height: 470px;
+        padding: 24px;
+    }
+    .error-main .btn {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .search-form.search-form--page input {
+        height: 58px;
+        padding-left: 44px;
+        font-size: 12px;
+    }
+    .search-form.search-form--page .btn {
+        height: 42px;
+        padding: 0 16px;
+    }
+    .search-form.search-form--page {
+        margin-bottom: 16px;
+    }
+    .item-result {
+        font-size: 14px;
+        line-height: 130%;
+    }
+    .item-result .link {
+        font-size: 12px;
+        font-weight: 450;
+    }
+    .pager-results {
+        margin-left: 0;
+        display: block;
+    }
 }
 
 
@@ -2313,6 +2412,7 @@
 @media only screen and (min-width : 768px) {
     .btn-tab-inner,
     .btn-filter,
+    .btn-nav-question,
     .btn-tab,
     .show-mobile {
         display: none !important;
@@ -2511,6 +2611,9 @@
     .nav-questions li a:hover span {
         background: #D32D2F;
     }
+    .copy-btn:hover::before {
+        filter: brightness(0%);
+    }
 }
 
 
@@ -2641,5 +2744,8 @@
     }
     .nav-questions li a:active span {
         background: #D32D2F;
+    }
+    .copy-btn:active::before {
+        filter: brightness(0%);
     }
 }

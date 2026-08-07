@@ -27,16 +27,20 @@
 		</div>
 	</div>
 
-	<div class="wrapper wrapper--simple">
+	<div class="wrapper">
 
 		<header class="header">
-			<div class="header__bottom">
+			<div class="header__top">
 				<div class="container">
 					<div class="header__wrapper">
-						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="RuDesktop">
-						</a>
-						<div class="header__buttons">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li><a href="#">Для бизнеса</a></li>
+								<li><a href="#">Для госорганизаций</a></li>
+								<li><a href="#">Для дома</a></li>
+							</ul>
+						</nav>
+						<div class="header__right">
 							<div class="phones-list">
 								<div class="phones-list__value">
 									<a href="tel:88005006857">8 800 500-68-57</a>
@@ -77,11 +81,164 @@
 									</ul>
 								</div>
 							</div>
+							<div class="open-search">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M13.9999 13.9999L11.0999 11.0999" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								Поиск
+							</div>
 							<a href="#" class="link-login">
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3334 14V12.6667C13.3334 11.9594 13.0525 11.2811 12.5524 10.781C12.0523 10.281 11.374 10 10.6667 10H5.33341C4.62617 10 3.94789 10.281 3.4478 10.781C2.9477 11.2811 2.66675 11.9594 2.66675 12.6667V14" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M7.99992 7.33333C9.47268 7.33333 10.6666 6.13943 10.6666 4.66667C10.6666 3.19391 9.47268 2 7.99992 2C6.52716 2 5.33325 3.19391 5.33325 4.66667C5.33325 6.13943 6.52716 7.33333 7.99992 7.33333Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
 								Войти
 							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__wrapper">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="RuDesktop">
+						</a>
+						<nav class="menu">
+							<ul class="menu__list">
+								<li class="menu__haschild">
+									<a href="#">Продукт</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">RuDesktop <span class="text-small">Удаленный доступ</span></a></li>
+											<li><a href="#">RuDesktop UEM <span class="text-small">Удаленное управление ИТ-парком</span></a></li>
+											<li><a href="#">Все возможности</a></li>
+											<li><a href="#">Безопасность</a></li>
+											<li><a href="#">Совместимость и интеграции</a></li>
+											<li><a href="#">Лицензии и сертификаты</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Решения</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown menu__dropdown--main">
+										<div class="menu__dropdown-wrap">
+											<ul class="menu__dropdown-nav">
+												<li><a href="#">По пользователям</a></li>
+												<li><a href="#">По задачам</a></li>
+												<li><a href="#">По отраслям</a></li>
+												<li><a href="#">По операционным системам</a></li>
+											</ul>
+											<div class="menu__dropdown-tabs">
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">ИТ-отделы</a></li>
+														<li><a href="#">Малый и средний бизнес</a></li>
+														<li><a href="#">Крупные предприятия</a></li>
+														<li><a href="#">Госкорпорации</a></li>
+														<li><a href="#">Фрилансеры</a></li>
+														<li><a href="#">Физические лица</a></li>
+													</ul>
+												</div>
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">Удаленный доступ и поддержка</a></li>
+														<li><a href="#">Удаленное управление</a></li>
+														<li><a href="#">Удаленный рабочий стол</a></li>
+														<li><a href="#">Совместное использование экрана</a></li>
+														<li><a href="#">Инвентаризация ПО и оборудования</a></li>
+													</ul>
+												</div>
+												<div class="menu__dropdown-tab">
+													<ul>
+														<li><a href="#">Информационные технологии</a></li>
+														<li><a href="#">Финансы</a></li>
+														<li><a href="#">Энергетика</a></li>
+														<li><a href="#">Промышленность</a></li>
+														<li><a href="#">Транспорт и логистика</a></li>
+														<li><a href="#">Торговля</a></li>
+													</ul>
+													<div class="menu__dropdown-link">
+														<a href="#" class="link">Все клиенты и кейсы <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+													</div>
+												</div>
+												<div class="menu__dropdown-tab">
+													<div class="menu__dropdown-grid">
+														<div class="menu__dropdown-column">
+															<div class="menu__dropdown-subtitle">Международные</div>
+															<ul>
+																<li><a href="#">Windows</a></li>
+																<li><a href="#">Linux <span class="text-small">Ubuntu, Debian и Arch Linux</span></a></li>
+																<li><a href="#">macOS</a></li>
+																<li><a href="#">Android</a></li>
+																<li><a href="#">Портабельная версия <span class="text-small">Для Windows</span></a></li>
+															</ul>
+														</div>
+														<div class="menu__dropdown-column">
+															<div class="menu__dropdown-subtitle">Отечественные</div>
+															<ul>
+																<li><a href="#">Astra Linux</a></li>
+																<li><a href="#">Alt Linux</a></li>
+																<li><a href="#">РЕД ОС</a></li>
+																<li><a href="#">РОСА</a></li>
+																<li><a href="#">ОСнова</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="menu__dropdown-link">
+														<a href="#" class="link">Все совместимости и интеграции <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.33325 8H12.6666" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 3.33337L12.6667 8.00004L8 12.6667" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="#">Клиенты</a></li>
+								<li><a href="#">Тарифы</a></li>
+								<li class="menu__haschild">
+									<a href="#">Поддержка</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">Документация <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M10 2H14V6" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /><path d="M6.66602 9.33333L13.9993 2" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" /></svg></a></li>
+											<li><a href="#">Создать обращения</a></li>
+											<li><a href="#">Регламент техподдержки</a></li>
+											<li><a href="#">Частые вопросы</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Партнерам</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">Партнерская программа</a></li>
+											<li><a href="#">Партнеры и дистрибьюторы</a></li>
+											<li><a href="#">Регистрация сделки</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__haschild">
+									<a href="#">Компания</a>
+									<div class="menu__arrow"></div>
+									<div class="menu__dropdown">
+										<ul>
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Новости</a></li>
+											<li><a href="#">Мероприятия</a></li>
+											<li><a href="#">Блог</a></li>
+											<li><a href="#">Медиа-кит</a></li>
+											<li><a href="#">Вакансии</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__buttons">
+							<a href="#" class="btn btn--secondary">Скачать</a>
 							<a href="#" class="btn">Купить</a>
+							<a href="#" class="link-login show-mobile">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3334 14V12.6667C13.3334 11.9594 13.0525 11.2811 12.5524 10.781C12.0523 10.281 11.374 10 10.6667 10H5.33341C4.62617 10 3.94789 10.281 3.4478 10.781C2.9477 11.2811 2.66675 11.9594 2.66675 12.6667V14" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /><path d="M7.99992 7.33333C9.47268 7.33333 10.6666 6.13943 10.6666 4.66667C10.6666 3.19391 9.47268 2 7.99992 2C6.52716 2 5.33325 3.19391 5.33325 4.66667C5.33325 6.13943 6.52716 7.33333 7.99992 7.33333Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" /></svg>
+								Войти
+							</a>
 							<div class="sandwich">
 								<div class="sw-topper"></div>
 								<div class="sw-bottom"></div>
@@ -283,269 +440,234 @@
 			<div class="container">
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная</a></li>
-					<li><a href="#">Тарифы</a></li>
-					<li>Оформление покупки</li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li>Python-разработчик</li>
 				</ul>
-				<h1 class="title title--page">Оформление покупки</h1>
+				<div class="about-vacancy">
+					<div class="tag">Разработка</div>
+					<div class="about-vacancy__wrapper">
+						<div class="about-vacancy__conent">
+							<h1 class="title">Разработка</h1>
+						</div>
+						<div class="about-vacancy__buttons">
+							<a href="#sect-vacancy" class="btn btn--light link-scroll">Откликнуться</a>
+							<a href="#" class="btn btn--outline" target="_blank">Эта вакансия на hh.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-vacancy show-tablet">
+					<div class="details-vacancy">
+						<div class="details-vacancy__head">
+							<div class="text-small">Заработная плата</div>
+							<div class="title-main">200 000 – 280 000 ₽</div>
+							<p>на руки, после вычета налогов</p>
+						</div>
+						<div class="details-vacancy__content">
+							<div class="item-feature">
+								<div class="text-small">Направление</div>
+								<strong>Разработка</strong>
+							</div>
+							<div class="item-feature">
+								<div class="text-small">Формат</div>
+								<strong>Удаленно</strong>
+							</div>
+							<div class="item-feature">
+								<div class="text-small">Опыт</div>
+								<strong>3–6 лет</strong>
+							</div>
+						</div>
+					</div>
+					<div class="help-vacancy">
+						<p>Не подходит эта вакансия?</p>
+						<a href="#" class="link">Смотреть все вакансии →</a>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-lg-8">
-						<div class="step-checkout">
-							<div class="step-checkout__head"><span>01</span>Лицензия и срок</div>
-							<div class="step-checkout__content">
-								<div class="title-small step-checkout__title">Тип лицензии</div>
-								<div class="row">
-									<div class="col-xl-4">
-										<div class="unit-check">
-											<label>
-												<input type="radio" name="type-lisenses" checked/>
-												<span class="unit-check__content">
-													<span class="unit-check__head">
-														<span class="unit-check__icon"></span>
-														<span class="unit-check__title">Комфорт</span>
-													</span>
-													<span class="text-small">1 месяц — 2 000 ₽ / подкл.</span>
-													<span class="text-small">До 100 устройств</span>
-													<span class="text-small">Оплата картой</span>
-												</span>
-											</label>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="link js-change-checkout">Изменить выбор</a>
-								<div class="change-checkout">
-									<div class="text-small step-checkout__title">Выберите тип лицензиции</div>
-									<div class="row">
-										<div class="col-xl-3 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="type-checkout1" checked/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__icon"></span>
-															<span class="unit-check__title">Комфорт</span>
-														</span>
-														<span class="text-small">1 месяц — 2 000 ₽ / подкл.</span>
-														<span class="text-small">До 100 устройств</span>
-														<span class="text-small">Оплата картой</span>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-xl-3 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="type-checkout1"/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__icon"></span>
-															<span class="unit-check__title">Бизнес Облако</span>
-														</span>
-														<span class="text-small">14 000 ₽ / подкл.</span>
-														<span class="text-small">1 год</span>
-														<span class="text-small">До 100 устройств</span>
-														<span class="text-small">Оплата по счету </span>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-xl-3 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="type-checkout1"/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__icon"></span>
-															<span class="unit-check__title">Бизнес Облако+</span>
-														</span>
-														<span class="text-small">Пакет из 3 подкл. (50 000 ₽)</span>
-														<span class="text-small">14 000 ₽ / доп. подкл.</span>
-														<span class="text-small">1 год</span>
-														<span class="text-small">Безлимит устройств</span>
-														<span class="text-small">Оплата по счету </span>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-xl-3 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="type-checkout1"/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__icon"></span>
-															<span class="unit-check__title">Бизнес Сервер</span>
-														</span>
-														<span class="text-small">15 000 ₽ / подкл.</span>
-														<span class="text-small">Серверное ПО</span>
-														<span class="text-small">1 год</span>
-														<span class="text-small">Безлимит устройств</span>
-														<span class="text-small">Оплата по счету </span>
-													</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<div class="text-small step-checkout__title">Выберите срок действия</div>
-									<div class="row">
-										<div class="col-xl-4 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="term-checkout1" checked/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__title">1 месяц</span>
-														</span>
-														<span class="text-small">2 000 ₽ / подкл.</span>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-xl-4 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="term-checkout1"/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__title">2 000 ₽ / подкл.</span>
-														</span>
-														<span class="text-small">9 000 ₽ / подкл. </span>
-													</span>
-												</label>
-											</div>
-										</div>
-										<div class="col-xl-4 col-md-6">
-											<div class="unit-check">
-												<label>
-													<input type="radio" name="term-checkout1"/>
-													<span class="unit-check__content">
-														<span class="unit-check__head">
-															<span class="unit-check__title">12 месяцев</span>
-														</span>
-														<span class="text-small">14 000 ₽ / подкл. </span>
-													</span>
-												</label>
-											</div>
-										</div>
-									</div>
-									<a href="#" class="btn btn--accent btn--full">Сохранить выбор</a>
-								</div>
+						<div class="single-article">
+							<div class="info-alert">
+								<p>Компании ООО "Передовые Технологии" - разработчику отечественного программного обеспечения RuDesktop в сфере удаленного доступа и управления, администрирования пользовательскими устройствами на наиболее популярных ОС - требуется разработчик.</p>
+								<p>Клиентами компании являются как частные лица, так и корпоративные с парком в десятки тысяч устройств с различной архитектурой и работающих под управлением различных операционных систем.</p>
+								<p>Rudesktop решает рутинные задачи системного администрирования: Удаленный доступ к ПК пользователя, Установка\Удаление программ, Настройка операционных систем, Исполнение скриптов и политик, Инвентаризация ПО и оборудования и выполняет множество другой работы, которую обычно выполняют решения класса UEM.</p>
+								<p>Наше программное обеспечение предоставляет как облачное решение в виде сервера, так и возможность развернуть локальный сервер, чтобы клиенты могли установить его на своем парке оборудования.</p>
 							</div>
-						</div>
-						<div class="step-checkout">
-							<div class="step-checkout__head"><span>02</span>Количество подключений</div>
-							<div class="step-checkout__content">
-								<div class="title-small step-checkout__title">Тип лицензии</div>
-								<div class="text-small step-checkout__title">Одновременные подключения  <div class="hint"><div class="hint__content">Это количество подключений к удаленным устройствам, которые могут быть активны в один и тот же момент времени. <br><br>При этом одно подключение — это один активный сеанс с одного устройства. <br><br>С одного компьютера можно вести несколько сеансов одновременно, но каждый сеанс требует отдельного подключения.</div></div></div>
-								<div class="step-checkout__quantity">
-									<div class="quantity quantity--main">
-										<div class="quantity-button quantity-down">-</div>
-										<input type="number" min="1" step="1" value="9">
-										<div class="quantity-button quantity-up">+</div>
-									</div>
-									<div class="text-small">2 000 ₽ × 2 = 4 000 ₽</div>
+							<div class="unit-article unit-article--vacancy">
+								<div class="unit-article__head">
+									<img src="img/ic_tools.svg" alt="alt">
+									<h3 class="title-small">Чем предстоит заниматься</h3>
 								</div>
+								<ul>
+									<li>Направлять разработку программного обеспечения на Python, обеспечивая высокое качество и соблюдение сроков;</li>
+									<li>Управление командой разработчиков, включая распределение задач, менторинг и развитие навыков команды;</li>
+									<li>Проектирование архитектуры ПО с использованием Python, учитывая требования проекта и бизнес-потребности;</li>
+									<li>Сотрудничество с другими отделами для обеспечения интеграции и согласованности разработки;</li>
+									<li>Участие в процессе рецензирования кода, проведение код-ревью и обеспечение соблюдения стандартов кодирования;</li>
+									<li>Решение технических проблем и консультирование членов команды по вопросам проектирования и разработки.</li>
+								</ul>
 							</div>
-						</div>
-						<div class="step-checkout">
-							<div class="step-checkout__head"><span>03</span>Тип плательщика</div>
-							<div class="step-checkout__content">
-								<div class="type-pay">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg>
-									Физическое лицо
+							<div class="unit-article unit-article--vacancy">
+								<div class="unit-article__head">
+									<img src="img/ic_tools.svg" alt="alt">
+									<h3 class="title-small">Для нас важно</h3>
 								</div>
-								<div class="text-small text-small--gray">Доступна только онлайн-оплата картой на сайте.</div>
+								<ul>
+									<li>Направлять разработку программного обеспечения на Python, обеспечивая высокое качество и соблюдение сроков;</li>
+									<li>Управление командой разработчиков, включая распределение задач, менторинг и развитие навыков команды;</li>
+									<li>Проектирование архитектуры ПО с использованием Python, учитывая требования проекта и бизнес-потребности;</li>
+									<li>Сотрудничество с другими отделами для обеспечения интеграции и согласованности разработки;</li>
+									<li>Участие в процессе рецензирования кода, проведение код-ревью и обеспечение соблюдения стандартов кодирования;</li>
+									<li>Решение технических проблем и консультирование членов команды по вопросам проектирования и разработки.</li>
+								</ul>
 							</div>
-						</div>
-						<div class="step-checkout">
-							<div class="step-checkout__head"><span>04</span>Контактные данные</div>
-							<div class="step-checkout__content">
-								<div class="check-user">
-									<div class="title-small">Уже есть личный кабинет?</div>
-									<p>Войдите или зарегистрируйтесь, чтобы ваши данные автоматически подтянулись</p>
-									<div class="check-user__buttons">
-										<a href="#" class="btn js-open-check-login">Войти</a>
-										<a href="#" class="btn btn--accent">Зарегистрироваться</a>
-										<div class="text-small">или заполните вручную ниже</div>
-									</div>
-									<div class="check-user__form">
-										<form>
-											<div class="control-form">
-												<input type="email" value="mail@mail.ru" inputmode="email" required>
-												<div class="control-form__label">Электронная почта*</div>
-											</div>
-											<div class="control-form">
-												<input type="password" value="fdsfdsfdsf" required>
-												<div class="control-form__label">Пароль*</div>
-											</div>
-											<button class="btn">Войти и заполнить автоматически</button>
-										</form>
-									</div>
+							<div class="unit-article unit-article--vacancy">
+								<div class="unit-article__head">
+									<img src="img/ic_tools.svg" alt="alt">
+									<h3 class="title-small">Будет плюсом</h3>
 								</div>
-								<div class="control-form">
-									<input type="text" required>
-									<div class="control-form__label">Имя Фамилия*</div>
-								</div>
-								<div class="control-form">
-									<input type="email" inputmode="email" required>
-									<div class="control-form__label">Электронная почта*</div>
-								</div>
-								<div class="control-form">
-									<input type="text" class="input-phone" required>
-								</div>
+								<ul>
+									<li>Направлять разработку программного обеспечения на Python, обеспечивая высокое качество и соблюдение сроков;</li>
+									<li>Управление командой разработчиков, включая распределение задач, менторинг и развитие навыков команды;</li>
+									<li>Проектирование архитектуры ПО с использованием Python, учитывая требования проекта и бизнес-потребности;</li>
+									<li>Сотрудничество с другими отделами для обеспечения интеграции и согласованности разработки;</li>
+									<li>Участие в процессе рецензирования кода, проведение код-ревью и обеспечение соблюдения стандартов кодирования;</li>
+									<li>Решение технических проблем и консультирование членов команды по вопросам проектирования и разработки.</li>
+								</ul>
 							</div>
-						</div>
-						<div class="scroll-checkout">
-							<div class="scroll-checkout__title">Перейти к заказу</div>
-							<div class="scroll-checkout__descr">2 000 ₽ × 2 = 4 000 ₽</div>
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5V19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M19 12L12 19L5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+							<div class="unit-article unit-article--vacancy">
+								<div class="unit-article__head">
+									<img src="img/ic_tools.svg" alt="alt">
+									<h3 class="title-small">Условия работы</h3>
+								</div>
+								<ul>
+									<li>Направлять разработку программного обеспечения на Python, обеспечивая высокое качество и соблюдение сроков;</li>
+									<li>Управление командой разработчиков, включая распределение задач, менторинг и развитие навыков команды;</li>
+									<li>Проектирование архитектуры ПО с использованием Python, учитывая требования проекта и бизнес-потребности;</li>
+									<li>Сотрудничество с другими отделами для обеспечения интеграции и согласованности разработки;</li>
+									<li>Участие в процессе рецензирования кода, проведение код-ревью и обеспечение соблюдения стандартов кодирования;</li>
+									<li>Решение технических проблем и консультирование членов команды по вопросам проектирования и разработки.</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="sidebar-checkout">
-							<div class="sidebar-checkout__head">Сводка заказа</div>
-							<div class="sidebar-checkout__content">
-								<div class="sidebar-checkout__features">
-									<div class="feature-checkout">
-										<div class="text-small">Лицензия</div>
-										<div class="text-regular">Комфорт</div>
+						<div class="sidebar-vacancy hidden-table">
+							<div class="details-vacancy">
+								<div class="details-vacancy__head">
+									<div class="text-small">Заработная плата</div>
+									<div class="title-main">200 000 – 280 000 ₽</div>
+									<p>на руки, после вычета налогов</p>
+								</div>
+								<div class="details-vacancy__content">
+									<div class="item-feature">
+										<div class="text-small">Направление</div>
+										<strong>Разработка</strong>
 									</div>
-									<div class="feature-checkout">
-										<div class="text-small">Срок</div>
-										<div class="text-regular">1 месяц</div>
+									<div class="item-feature">
+										<div class="text-small">Формат</div>
+										<strong>Удаленно</strong>
 									</div>
-									<div class="feature-checkout">
-										<div class="text-small">Количество одновременных подключений</div>
-										<div class="text-regular">2</div>
-									</div>
-									<div class="feature-checkout">
-										<div class="text-small">Плательщик</div>
-										<div class="text-regular">Физлицо</div>
-									</div>
-									<div class="feature-checkout">
-										<div class="text-small">Оплата</div>
-										<div class="text-regular">Онлайн</div>
+									<div class="item-feature">
+										<div class="text-small">Опыт</div>
+										<strong>3–6 лет</strong>
 									</div>
 								</div>
-								<div class="promocode-form">
-									<input type="text" placeholder="Поиск" required>
-									<button class="btn btn--dark">Применить</button>
+							</div>
+							<div class="help-vacancy">
+								<p>Не подходит эта вакансия?</p>
+								<a href="#" class="link">Смотреть все вакансии →</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation" id="sect-vacancy">
+			<div class="container">
+				<div class="consultation__main">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="head-section">
+								<p class="subtitle">[ заявка ]</p>
+								<h2 class="title">Откликнуться <br>на вакансию</h2>
+								<p class="description description--xs">Заполните форму, и мы свяжемся с вами в течение 2–3 рабочих дней. Приложите резюме — это ускорит рассмотрение вашего отклика</p>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<form>
+								<div class="item-form">
+									<input type="text" placeholder="Имя Фамилия*" required>
 								</div>
-								<div class="sidebar-prices">
-									<div class="text-small">2 000 ₽ × 2</div>
-									<div class="text-small">4 000 ₽</div>
+								<div class="item-form">
+									<input type="tel" placeholder="Телефон*" class="input-phone" inputmode="numeric" required>
 								</div>
-								<div class="sidebar-prices">
-									<div class="title-small">К оплате</div>
-									<div class="title-small">4 000 ₽</div>
+								<div class="item-form">
+									<input type="email" placeholder="Электронная почта*" inputmode="email" required>
 								</div>
-								<div class="checkbox checkbox--main">
+								<div class="item-form">
+									<input type="text" placeholder="Ссылка на резюме">
+								</div>
+								<div class="title-min">Или прикрепите резюме</div>
+								<div class="file-upload">
+									<label>
+										<input type="file" name="file">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="white" stroke-linecap="round" stroke-linejoin="round" /><path d="M17 8L12 3L7 8" stroke="white" stroke-linecap="round" stroke-linejoin="round" /><path d="M12 3V15" stroke="white" stroke-linecap="round" stroke-linejoin="round" /></svg>
+										Перетащите файл или выберите с компьютера 
+										<span class="text-small">до 10 МБ</span>
+									</label>
+									<div class="name-upload"></div>
+								</div>
+								<div class="item-form">
+									<textarea placeholder="Дополнительная информация"></textarea>
+								</div>
+								<div class="checkbox checkbox--small">
 									<label>
 										<input type="checkbox" required />
 										<span>Отправляя форму, я даю свое согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>.</span>
 									</label>
 								</div>
-								<button class="btn btn--full">Отправить</button>
-								<div class="sidebar-checkout__descr text-small">После оплаты лицензионный ключ будет отправлен на указанную электронную почту</div>
+								<button class="btn btn--light">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="top-kit top-kit--simple">
+					<div class="row">
+						<div class="col-xl-4 col-12">
+							<div class="item-box">
+								<div class="title-small">HR-отдел</div>
+								<a href="mailto:hr@rudesktop.ru" class="link">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.7 3H17.3C18.235 3 19 3.73125 19 4.625V14.375C19 15.2688 18.235 16 17.3 16H3.7C2.765 16 2 15.2688 2 14.375V4.625C2 3.73125 2.765 3 3.7 3Z" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /><path d="M19 5L10.5 11L2 5" stroke="#D32D2F" stroke-linecap="round" stroke-linejoin="round" /></svg>
+									hr@rudesktop.ru
+								</a>
+								<div class="text-small gray">Отвечаем в течение 1 рабочего дня</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="item-box">
+								<div class="title-small">Следите за вакансиями</div>
+								<a href="#" class="link-page">
+									<span class="link-page__icon">hh</span>
+									<span class="text-small">hh.ru / страница работодателя</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="item-box">
+								<div class="title-small">RuDesktop в соцсетях</div>
+								<ul class="socials-list socials-list--main">
+									<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+									<li><a href="#" target="_blank"><img src="img/max.svg" alt="alt"></a></li>
+									<li><a href="#" target="_blank"><img src="img/rt.svg" alt="alt"></a></li>
+									<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+									<li><a href="#" target="_blank"><img src="img/hb.svg" alt="alt"></a></li>
+								</ul>
 							</div>
 						</div>
 					</div>

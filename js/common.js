@@ -116,13 +116,13 @@ $('input[name="register"]').on('change', function() {
 	$('.btn-nav-question').click(function () {
 		$(this).toggleClass("active");
 		$(this).siblings(".nav-questions").slideToggle(200);
-		$('.nav-question-wrapper .nav-questions a').click(function (event) {
+		$('.nav-question-wrapper .nav-questions:not(.nav-questions--notabs) a').click(function (event) {
 			$(this).parent().parent().slideUp(200);
 
 		});
 	});
 
-    $('.nav-questions a').on('click', function () {
+    $('.nav-questions:not(.nav-questions--notabs) a').on('click', function () {
         var textTab = $(this).html();
       $(this).parent().parent().siblings(".btn-nav-question").html(textTab);
            $(".btn-nav-question").removeClass("active");
@@ -615,7 +615,7 @@ const $scrollBlock = $('.scroll-checkout');
   }, 800); 
 });
 
-$('.tariffs-links a, .link-scroll, .nav-questions a, .nav-article a').on('click', function(e) {
+$('.tariffs-links a, .link-scroll, .nav-questions:not(.nav-questions--notabs) a, .nav-article a').on('click', function(e) {
   e.preventDefault();
   
   var targetId = $(this).attr('href');
@@ -632,6 +632,19 @@ $('.nav-questions a').on('click', function(e) {
  $(this).parent().siblings().removeClass("active");
 });
 
+
+  //copy
+  $(".copy-btn").on("click", function () {
+    var btnCopy = $(this);
+    var value = $(this).siblings(".copy-value").text().trim();
+
+    navigator.clipboard.writeText(value).then(function () {
+      btnCopy.addClass("active");
+      setTimeout(function () {
+       btnCopy.removeClass("active");
+      }, 1000);
+    });
+  });
 
 	//Попап менеджер FancyBox
 	$(".fancybox").fancybox({
